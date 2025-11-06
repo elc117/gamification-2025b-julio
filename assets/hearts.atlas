@@ -1,0 +1,9 @@
+hearts.png
+size:256,64
+repeat:none
+3hearts
+bounds:67,3,63,30
+2hearts
+bounds:132,4,64,29
+1hearts
+bounds:2,2,63,31
