@@ -12,14 +12,13 @@ public class ButtonGame {
     private TextButton button;
     private BitmapFont font;
 
-    // Mantém o construtor antigo, agora delegando para o novo com scale = 1f
     public ButtonGame(String text, String atlasPath, String buttonUp, String buttonDown) {
         this(text, atlasPath, buttonUp, buttonDown, 1f);
     }
 
     public ButtonGame(String text, String atlasPath, String buttonUp, String buttonDown, float fontScale) {
-        atlas = new TextureAtlas(atlasPath);
-        skin = new Skin();
+        this.atlas = new TextureAtlas(atlasPath);
+        this.skin = new Skin();
         skin.addRegions(atlas);
         
         TextButton.TextButtonStyle style = new TextButton.TextButtonStyle();
@@ -32,6 +31,7 @@ public class ButtonGame {
         style.font = font; 
 
         button = new TextButton(text, style);
+        button.getLabel().setWrap(true);
     }
 
     public TextButton getButton() {
