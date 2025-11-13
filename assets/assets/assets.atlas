@@ -1,0 +1,15 @@
+assets.png
+size:2048,2048
+repeat:none
+Background_Select
+bounds:2,18,1920,1080
+Button_Pressed
+bounds:1924,1085,43,13
+Button_Unpressed
+bounds:2,2,43,14
+
+assets2.png
+size:2048,2048
+repeat:none
+Background
+bounds:2,2,1920,1080
