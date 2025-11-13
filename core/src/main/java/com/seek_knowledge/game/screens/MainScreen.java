@@ -3,20 +3,15 @@ package com.seek_knowledge.game.screens;
 import com.badlogic.gdx.maps.tiled.TmxMapLoader;
 import com.seek_knowledge.game.MainGame;
 import com.badlogic.gdx.graphics.OrthographicCamera;
-import com.badlogic.gdx.maps.MapObject;
-import com.badlogic.gdx.maps.objects.RectangleMapObject;
 import com.badlogic.gdx.maps.tiled.TiledMap;
 import com.badlogic.gdx.maps.tiled.renderers.OrthogonalTiledMapRenderer;
 import com.badlogic.gdx.utils.viewport.StretchViewport;
 import com.badlogic.gdx.physics.box2d.World;
 import com.badlogic.gdx.math.Vector2;
 import com.seek_knowledge.game.sprites.Character;
-import com.seek_knowledge.game.tools.Ground;
-import com.seek_knowledge.game.trivia.Question;
+import com.seek_knowledge.game.tools.PhaseManager;
 import com.badlogic.gdx.scenes.scene2d.Stage;
 import com.badlogic.gdx.Gdx;
-import com.badlogic.gdx.files.FileHandle;
-import com.badlogic.gdx.utils.Json;
 import com.badlogic.gdx.scenes.scene2d.ui.Table;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.badlogic.gdx.graphics.g2d.TextureRegion;
@@ -29,109 +24,46 @@ public class MainScreen extends GameScreen {
     private OrthogonalTiledMapRenderer mapRenderer;
     private OrthographicCamera camera;
     private Character player, enemy;
-
     private TextureAtlas atlas;
     private Skin skin;
     private TextureRegion heartTexture;
-
-    private Question[] questions;
-    private Question currentQuestion;
     private Stage stage;
-    private int currentIndex = 0;
-    private boolean isBossLevel = false;
-
+    private final float enemyWidth = WORLD_WIDTH / 3;
     private World world;
+    private PhaseManager phaseManager;
 
-    public MainScreen(MainGame game) {
+    public MainScreen(MainGame game, String characterName) {
         super(game);
 
-        mapLoader = new TmxMapLoader();
-        map = mapLoader.load("World1.tmx");
-        mapRenderer = new OrthogonalTiledMapRenderer(map, 1f);
+        this.mapLoader = new TmxMapLoader();
+        this.map = mapLoader.load("maps/" + characterName + "_World1.tmx");
+        this.mapRenderer = new OrthogonalTiledMapRenderer(map, 1f);
 
-        camera = new OrthographicCamera();
+        this.camera = new OrthographicCamera();
         super.viewport = new StretchViewport(WORLD_WIDTH / 2, WORLD_HEIGHT / 2, camera);
 
-        world = new World(new Vector2(0, -10), true);
-        player = new Character(world, 3, "character.atlas", 256f, 256f, 100f, 70f);
-        enemy = new Character(world, 1, "enemy1.atlas", 256f, 256f, 300f, 70f);
+        this.world = new World(new Vector2(0, -10), true);
+        this.player = new Character(world, 3, "characters/" + characterName + ".atlas", 200f, 46f, 0.3f);
+        this.enemy = new Character(world, 1, "enemies/" + characterName + "/enemy1.atlas", enemyWidth, 55f, 0.3f);
 
-        for (MapObject object : map.getLayers().get(1).getObjects().getByType(RectangleMapObject.class)) {
-            new Ground(world, object);
-        }
-
-        stage = new Stage(super.viewport);
+        this.stage = new Stage(super.viewport);
         Gdx.input.setInputProcessor(stage);
 
-        loadJson("questions.json");
-
-        currentQuestion = new Question(questions[currentIndex].options, super.viewport, stage,
-                questions[currentIndex].correctIndex, questions[currentIndex].text);
-
-        atlas = new TextureAtlas("hearts.atlas");
-        skin = new Skin();
+        this.atlas = new TextureAtlas("hearts.atlas");
+        this.skin = new Skin();
         skin.addRegions(atlas);
-        heartTexture = skin.getRegion("3hearts");
-
+        this.heartTexture = skin.getRegion("3hearts");
         Image heartImage = new Image(heartTexture);
+        this.phaseManager = new PhaseManager(player, enemy, world, enemyWidth, viewport, stage, skin, characterName, map, mapRenderer, mapLoader);
 
-        Table table = currentQuestion.getTable();
+        Table table = phaseManager.getCurrentQuestion().getTable();
         table.add(heartImage).padTop(30);
-        addListener(heartImage, table);
+        phaseManager.addListener(heartImage, table, game, this);
         stage.addActor(table);
-    }
 
-    private void loadJson(String jsonPath) {
-        Json json = new Json();
-        FileHandle file = Gdx.files.internal(jsonPath);
-        questions = json.fromJson(Question[].class, file);
-    }
-
-    private void addListener(Image heartImage, Table table) {
-        Image enemyImage = new Image(heartTexture);
-
-        for (int i = 0; i < currentQuestion.getOptionsButtons().length; i++) {
-            final int index = i;
-            currentQuestion.getOptionsButtons()[i].getButton()
-                    .addListener(new com.badlogic.gdx.scenes.scene2d.utils.ClickListener() {
-                        @Override
-                        public void clicked(com.badlogic.gdx.scenes.scene2d.InputEvent event, float x, float y) {
-                            if (currentQuestion.isCorrect(index)) {
-                                player.attack();
-                                currentIndex++;
-
-                                if (isBossLevel) {
-                                    enemy.takeDamage(1);
-                                    TextureRegion newRegion = skin.getRegion(enemy.getHealth() + "hearts");
-                                    enemyImage.setDrawable(new Image(newRegion).getDrawable());
-                                }
-
-                                if (currentIndex >= questions.length) {
-                                    isBossLevel = !isBossLevel;
-                                    if (isBossLevel) {
-                                        loadJson("boss.json");
-                                        enemy = new Character(world, 3, "enemy1.atlas", 256f, 256f, 300f, 70f);
-
-                                        table.add(enemyImage).padTop(10);
-                                        currentIndex = 0;
-                                    } else {
-                                        loadJson("questions.json");
-
-                                        currentIndex = 0;
-                                    }
-                                }
-
-                                currentQuestion.updateQuestion(questions[currentIndex].options,
-                                        questions[currentIndex].correctIndex, questions[currentIndex].text);
-                            } else {
-                                player.takeDamage(1);
-                                enemy.attack();
-                                player.hurt();
-                                heartTexture = skin.getRegion(player.getHealth() + "hearts");
-                                heartImage.setDrawable(new Image(heartTexture).getDrawable());
-                            }
-                        }
-                    });
+        if (phaseManager.getCurrentPhase() == 3) {
+            game.setScreen(new MainMenuScreen(game));
+            dispose();
         }
     }
 
@@ -141,12 +73,11 @@ public class MainScreen extends GameScreen {
         super.render(delta);
         mapRenderer.setView(camera);
         mapRenderer.render();
-        player.update(delta, 0.2f, 0.2f);
-        enemy.update(delta, -1.1f, 0.2f);
+        player.update(delta, 1f, 0.2f);
 
         super.batch.begin();
         player.draw(super.batch);
-        enemy.draw(super.batch);
+        phaseManager.update(delta, super.batch);
         super.batch.end();
 
         stage.act(delta);
@@ -163,5 +94,4 @@ public class MainScreen extends GameScreen {
         skin.dispose();
         atlas.dispose();
     }
-
 }
