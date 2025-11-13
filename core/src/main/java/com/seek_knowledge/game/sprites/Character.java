@@ -9,8 +9,11 @@ import com.badlogic.gdx.graphics.g2d.TextureRegion;
 import com.badlogic.gdx.graphics.g2d.Animation;
 
 public class Character extends Sprite {
-    
-    public enum State {Idle, Attack, Hurt};
+
+    public enum State {
+        Idle, Attack, Hurt
+    };
+
     private State currentState;
 
     public World world;
@@ -23,22 +26,27 @@ public class Character extends Sprite {
     private Animation<TextureRegion> attackAnimation;
     private Animation<TextureRegion> hurtAnimation;
     private float stateTimer;
+    private float scale;
 
-    public Character(World world, int health, String atlas, Float frameWidth, Float frameHeight, Float posX, Float posY) {
+    public Character(World world, int health, String atlas, Float posX, Float posY, Float scale) {
         this.world = world;
         defineCharacter(posX, posY);
         this.health = health;
         this.atlas = new TextureAtlas(atlas);
+        this.scale = scale;
 
-        idleAnimation = new Animation<>(0.5f, this.atlas.findRegions("Idle"), Animation.PlayMode.LOOP);
-        attackAnimation = new Animation<>(0.1f, this.atlas.findRegions("Attack"), Animation.PlayMode.NORMAL);
-        hurtAnimation = new Animation<>(0.25f, this.atlas.findRegions("Hurt"), Animation.PlayMode.NORMAL);
-        currentState = State.Idle;
-        stateTimer = 0;
+        this.idleAnimation = new Animation<>(0.25f, this.atlas.findRegions("Idle"), Animation.PlayMode.LOOP);
+        this.attackAnimation = new Animation<>(0.2f, this.atlas.findRegions("Attack"), Animation.PlayMode.NORMAL);
+        this.hurtAnimation = new Animation<>(0.25f, this.atlas.findRegions("Hurt"), Animation.PlayMode.NORMAL);
+        this.currentState = State.Idle;
+        this.stateTimer = 0;
 
-        characterRegion = idleAnimation.getKeyFrame(stateTimer);
-        setBounds(2, 2, frameWidth, frameHeight);
+        this.characterRegion = idleAnimation.getKeyFrame(stateTimer);
         setRegion(characterRegion);
+    }
+
+    public Character (World world, String atlas, Float posX, Float posy, Float scale) {
+        this(world, 3, atlas, posX, posy, scale);
     }
 
     public TextureRegion getCharacterRegion() {
@@ -69,7 +77,15 @@ public class Character extends Sprite {
         }
 
         setRegion(characterRegion);
-        setPosition(body.getPosition().x - getWidth() * posX, body.getPosition().y - getHeight() * posY);
+
+        float scale = this.scale;
+        float frameWidth = characterRegion.getRegionWidth() / scale;
+        float frameHeight = characterRegion.getRegionHeight() / scale;
+        setSize(frameWidth, frameHeight);
+
+        setPosition(
+                body.getPosition().x - getWidth() / 2f + posX,
+                body.getPosition().y - getHeight() / 8f + posY);
     }
 
     public void defineCharacter(Float posX, Float posY) {
@@ -90,7 +106,7 @@ public class Character extends Sprite {
         return health;
     }
 
-    public void attack () {
+    public void attack() {
         currentState = State.Attack;
         stateTimer = 0;
     }
@@ -99,4 +115,9 @@ public class Character extends Sprite {
         currentState = State.Hurt;
         stateTimer = 0;
     }
+
+    public void restoreLife() {
+        this.health = 3;
+    }
+
 }
