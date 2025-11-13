@@ -7,14 +7,15 @@ import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.scenes.scene2d.Stage;
 import com.badlogic.gdx.utils.viewport.FillViewport;
 import com.badlogic.gdx.utils.viewport.FitViewport;
+import com.badlogic.gdx.utils.viewport.StretchViewport;
 import com.badlogic.gdx.utils.viewport.Viewport;
 import com.seek_knowledge.game.MainGame;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.badlogic.gdx.graphics.g2d.TextureRegion;
 
 public class GameScreen implements Screen {
-    protected static final float WORLD_WIDTH = 1920; // Largura base do mundo do jogo
-    protected static final float WORLD_HEIGHT = 1080; // Altura base do mundo do jogo
+    public static final float WORLD_WIDTH = 1920; // Largura base do mundo do jogo
+    public static final float WORLD_HEIGHT = 1080; // Altura base do mundo do jogo
     protected MainGame game;
     protected SpriteBatch batch;
     protected TextureAtlas atlas;
@@ -26,10 +27,10 @@ public class GameScreen implements Screen {
         this.game = game;
         this.batch = new SpriteBatch();
 
-        atlas = new TextureAtlas(Gdx.files.internal(atlasPath));
-        background = atlas.findRegion(regionName);
+        this.atlas = new TextureAtlas(Gdx.files.internal(atlasPath));
+        this.background = atlas.findRegion(regionName);
 
-        this.viewport = new FillViewport(WORLD_WIDTH, WORLD_HEIGHT);
+        this.viewport = new StretchViewport(WORLD_WIDTH, WORLD_HEIGHT);
         this.viewport.getCamera().position.set(WORLD_WIDTH / 2, WORLD_HEIGHT / 2, 0);
 
         this.stage = new Stage(new FitViewport(WORLD_WIDTH, WORLD_HEIGHT));
