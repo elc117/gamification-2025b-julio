@@ -1,0 +1,112 @@
+[
+    {
+        "id": 1,
+        "text": "Qual ave nasce com garras nos dígitos das asas?",
+        "options": [
+            "Hoatzin",
+            "Cassowary",
+            "Secretary bird",
+            "Cormorant"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "id": 2,
+        "text": "Qual é o nome científico do periquito-australiano?",
+        "options": [
+            "Melopsittacus undulatus",
+            "Ara macao",
+            "Pyrrhura molinae",
+            "Nymphicus hollandicus"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "id": 3,
+        "text": "Qual dos seguintes é outro nome para a tarântula 'Poecilotheria metallica'?",
+        "options": [
+            "Gooty",
+            "Silver Stripe",
+            "Woebegone",
+            "Hopper"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "id": 4,
+        "text": "Qual dessas é uma colônia de pólipos e não uma água-viva?",
+        "options": [
+            "Homem-de-guerra-português",
+            "Irukandji",
+            "Sea Nettle",
+            "Sea Wasp"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "id": 5,
+        "text": "Qual desses animais NÃO é um lagarto?",
+        "options": [
+            "Tuatara",
+            "Komodo Dragon",
+            "Gila Monster",
+            "Green Iguana"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "id": 6,
+        "text": "Qual é o nome científico do guepardo?",
+        "options": [
+            "Acinonyx jubatus",
+            "Panthera onca",
+            "Lynx rufus",
+            "Felis catus"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "id": 7,
+        "text": "Qual é o nome da proteína rica em cobre que dá o sangue azul ao polvo antártico?",
+        "options": [
+            "Hemocianina",
+            "Cytochrome",
+            "Methionine",
+            "Iron"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "id": 8,
+        "text": "Qual espécie é conhecida como 'galinha-da-montanha'?",
+        "options": [
+            "Sapo",
+            "Cavalo",
+            "Galinha",
+            "Mosca"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "id": 9,
+        "text": "Qual é o nome coletivo para abutres?",
+        "options": [
+            "Wake",
+            "Ambush",
+            "Building",
+            "Gaze"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "id": 10,
+        "text": "A qual subordem científica pertence a família Hyaenidae?",
+        "options": [
+            "Feliformia",
+            "Ciconiiformes",
+            "Caniformia",
+            "Haplorhini"
+        ],
+        "correctIndex": 0
+    }
+]

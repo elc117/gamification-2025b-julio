@@ -1,0 +1,175 @@
+[
+    {
+        "id": 1,
+        "text": "Que animal é representado em um dos experimentos mentais mais famosos de Schrodinger?",
+        "options": ["Borboleta", "Morcego", "Cachorro", "Gato"],
+        "correctIndex": 3
+    },
+    {
+        "id": 2,
+        "text": "Qual elemento tem o simbolo quimico Fe?",
+        "options": ["Estanho", "Ouro", "Ferro", "Prata"],
+        "correctIndex": 2
+    },
+    {
+        "id": 3,
+        "text": "O que significa a sigla LASER?",
+        "options": [
+            "Light amplifier by standby energy of radio",
+            "Light amplification by stimulated emission of radiation",
+            "Life antimatter by standing entry of range",
+            "Lite analysing by stereo ecorazer"
+        ],
+        "correctIndex": 1
+    },
+    {
+        "id": 4,
+        "text": "Qual a massa atômica do carbono?",
+        "options": ["10", "14", "12", "16"],
+        "correctIndex": 2
+    },
+    {
+        "id": 5,
+        "text": "Qual o peso atomico padrao de um nucleo de plutonio?",
+        "options": ["128", "94", "244", "481"],
+        "correctIndex": 2
+    },
+    {
+        "id": 6,
+        "text": "Qual foi o nome do primeiro satelite artificial da Terra, lancado pela Uniao Sovietica em 1957?",
+        "options": ["Zenit-2", "Sputnik 1", "Voskhod 3KV", "Soyuz 7K-OK"],
+        "correctIndex": 1
+    },
+    {
+        "id": 7,
+        "text": "Qual a porcentagem aproximada da superficie da Terra coberta por agua?",
+        "options": ["70%", "30%", "90%", "50%"],
+        "correctIndex": 0
+    },
+    {
+        "id": 8,
+        "text": "Qual o maior planeta do sistema solar?",
+        "options": ["Terra", "Marte", "Jupiter", "Saturno"],
+        "correctIndex": 2
+    },
+    {
+        "id": 9,
+        "text": "Qual destes é um metaloide?",
+        "options": ["Antimonio", "Rubidio", "Bromo", "Estanho"],
+        "correctIndex": 0
+    },
+    {
+        "id": 10,
+        "text": "Qual o gas que forma 78% da atmosfera terrestre?",
+        "options": ["Dioxido de Carbono", "Nitrogenio", "Oxigenio", "Argonio"],
+        "correctIndex": 1
+    },
+    {
+        "id": 11,
+        "text": "Quantos planetas o sistema solar possui?",
+        "options": ["8", "9", "7", "10"],
+        "correctIndex": 0
+    },
+    {
+        "id": 12,
+        "text": "As estrelas consistem, principalmente, de hidrogenio e qual outro gas?",
+        "options": ["Nitrogenio", "Helio", "Oxigenio", "Argonio"],
+        "correctIndex": 1
+    },
+    {
+        "id": 13,
+        "text": "Qual a velocidade da luz no vacuo?",
+        "options": ["308,215,043 m/s", "299,792,458 m/s", "751,665,014,151 m/s", "50,461 m/s"],
+        "correctIndex": 1
+    },
+    {
+        "id": 14,
+        "text": "Qual o nome comum do composto quimico monoxido de dihidrogenio?",
+        "options": ["Gas do riso", "Agua", "Metano", "Amônia"],
+        "correctIndex": 1
+    },
+    {
+        "id": 15,
+        "text": "Qual e a camada mais fina e externa da Terra?",
+        "options": ["Crosta", "Manto", "Exosfera", "Nucleo externo"],
+        "correctIndex": 0
+    },
+    {
+        "id": 16,
+        "text": "O que existe no centro da nossa galaxia?",
+        "options": ["Um quasar", "Um buraco negro", "Uma supernova", "Um buraco de minhoca"],
+        "correctIndex": 1
+    },
+    {
+        "id": 17,
+        "text": "Quantas leis da termodinamica existem?",
+        "options": ["4", "5", "3", "2"],
+        "correctIndex": 0
+    },
+    {
+        "id": 18,
+        "text": "Qual e o nome oficial da estrela mais proxima do Polo Celeste Norte?",
+        "options": ["Gamma Cephei", "Iota Cephei", "Polaris", "Eridanus"],
+        "correctIndex": 2
+    },
+    {
+        "id": 19,
+        "text": "Qual o simbolo do Mercurio?",
+        "options": ["Hg", "Al", "Mn", "Au"],
+        "correctIndex": 0
+    },
+    {
+        "id": 20,
+        "text": "Quantas luas a Terra possui?",
+        "options": ["3", "1", "2", "0"],
+        "correctIndex": 1
+    },
+    {
+        "id": 21,
+        "text": "Qual elemento possui o maior ponto de fusao?",
+        "options": ["Platina", "Carbono", "Tungstenio", "Hidrogenio"],
+        "correctIndex": 2
+    },
+    {
+        "id": 22,
+        "text": "Qual das seguintes nao e um grupo da tabela periodica?",
+        "options": ["Halogenios", "Fluorinos", "Metais alcalinos", "Gases nobres"],
+        "correctIndex": 1
+    },
+    {
+        "id": 23,
+        "text": "Qual gas nobre tem o menor numero atomico?",
+        "options": ["Helio", "Argon", "Kripton", "Neon"],
+        "correctIndex": 0
+    },
+    {
+        "id": 24,
+        "text": "Qual e a unidade SI padrao de distancia?",
+        "options": ["Braça", "Metro", "Pe", "Angstrom"],
+        "correctIndex": 1
+    },
+    {
+        "id": 25,
+        "text": "Qual e a unidade SI padrao de tempo?",
+        "options": ["Segundo", "Hora", "Minuto", "Dia"],
+        "correctIndex": 0
+    },
+    {
+        "id": 26,
+        "text": "O cinto de asteroides esta localizado entre quais dois planetas?",
+        "options": ["Terra e Marte", "Mercurio e Venus", "Marte e Jupiter", "Jupiter e Saturno"],
+        "correctIndex": 2
+    },
+    {
+        "id": 27,
+        "text": "71% da superficie da Terra e composta por",
+        "options": ["Agua", "Florestas", "Continentes", "Desertos"],
+        "correctIndex": 0
+    },
+    {
+        "id": 28,
+        "text": "Qual e o elemento mais abundante no universo?",
+        "options": ["Litio", "Hidrogenio", "Oxigenio", "Helio"],
+        "correctIndex": 1
+    }
+]

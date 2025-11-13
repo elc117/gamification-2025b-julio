@@ -1,0 +1,112 @@
+[
+    {
+        "id": 1,
+        "text": "Qual foi o castigo pela astúcia de Sísifo?",
+        "options": [
+            "Condenado a rolar uma rocha morro acima para sempre.",
+            "Ficar em um lago cheio de água sem poder beber.",
+            "Amarrado a uma pedra para ser bicado por aves por toda a eternidade.",
+            "Derrubar uma árvore que se regenerava após cada golpe de machado."
+        ],
+        "correctIndex": 0
+    },
+    {
+        "id": 2,
+        "text": "Quem Hipômenes derrotou em uma corrida?",
+        "options": [
+            "Atalanta",
+            "Teseu",
+            "Peleu",
+            "Jasão"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "id": 3,
+        "text": "Talos, o mítico homem de bronze gigante, era o protetor de qual ilha?",
+        "options": [
+            "Creta",
+            "Chipre",
+            "Sardenha",
+            "Sicília"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "id": 4,
+        "text": "Na mitologia grega, quem era a filha do rei Minos?",
+        "options": [
+            "Ariadne",
+            "Ariel",
+            "Atena",
+            "Alana"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "id": 5,
+        "text": "Quem é o deus menor protetor e criador de várias artes, como fabricação de queijo e apicultura?",
+        "options": [
+            "Aristeu",
+            "Cefisso",
+            "Autonoé",
+            "Carme"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "id": 6,
+        "text": "De acordo com o folclore algonquino, como alguém se transforma em um Wendigo?",
+        "options": [
+            "Participando de canibalismo.",
+            "Executando um ritual envolvendo assassinato.",
+            "Bebendo o sangue de muitos animais mortos.",
+            "Mutilando excessivamente carcaças de animais."
+        ],
+        "correctIndex": 0
+    },
+    {
+        "id": 7,
+        "text": "Quem é o deus egípcio da reprodução e da alface?",
+        "options": [
+            "Min",
+            "Mut",
+            "Menu",
+            "Meret"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "id": 8,
+        "text": "Na mitologia nórdica, qual é o nome da serpente que rói as raízes da árvore Yggdrasil?",
+        "options": [
+            "Nidhogg",
+            "Ymir",
+            "Odin",
+            "Bragi"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "id": 9,
+        "text": "Que estrutura imensa é referida na mitologia nórdica como Yggdrasil?",
+        "options": [
+            "Árvore",
+            "Castelo",
+            "Montanha",
+            "Templo"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "id": 10,
+        "text": "Qual deus nórdico possui um cavalo chamado Sleipnir?",
+        "options": [
+            "Odin",
+            "Frigg",
+            "Balder",
+            "Thor"
+        ],
+        "correctIndex": 0
+    }
+]

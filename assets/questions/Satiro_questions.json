@@ -1,0 +1,288 @@
+[
+  {
+    "id": 1,
+    "text": "A agora extinta espécie 'Tilacino' era nativa de onde?",
+    "options": [
+      "Tasmânia, Austrália",
+      "Oregon, Estados Unidos",
+      "Baluchistão, Paquistão",
+      "Valáquia, Romênia"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": 2,
+    "text": "Os 'Decápodes' são uma ordem de crustáceos com dez patas. Qual destes NÃO é um decápode?",
+    "options": [
+      "Krill",
+      "Camarões",
+      "Lagostas",
+      "Caranguejos"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": 3,
+    "text": "Qual animal fez parte de um experimento russo de domesticação em 1959?",
+    "options": [
+      "Raposas",
+      "Jacarés",
+      "Pombos",
+      "Ursos"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": 4,
+    "text": "Qual raça de cachorro é uma das mais antigas e existe desde antes de 400 a.C.?",
+    "options": [
+      "Chihuahua",
+      "Pugs",
+      "Bulldogs",
+      "Boxers"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": 5,
+    "text": "Qual é o substantivo coletivo para ursos?",
+    "options": [
+      "Preguiça",
+      "Manada",
+      "Tribo",
+      "Grupo"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": 6,
+    "text": "Qual é o termo comum para encefalopatia espongiforme bovina (BSE)?",
+    "options": [
+      "Doença da vaca louca",
+      "Febre do leite",
+      "Doença de Weil",
+      "Doença da febre aftosa"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": 7,
+    "text": "Que tipo de animal é um natterjack?",
+    "options": [
+      "Sapo",
+      "Inseto",
+      "Pássaro",
+      "Peixe"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": 8,
+    "text": "Qual espécie é um 'frango-da-montanha'?",
+    "options": [
+      "Sapo",
+      "Galinha",
+      "Mosca",
+      "Cavalo"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": 9,
+    "text": "Quantos dentes tem um coelho adulto?",
+    "options": [
+      "28",
+      "30",
+      "26",
+      "24"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": 10,
+    "text": "Para qual filo biológico pertencem todos os mamíferos, aves e répteis?",
+    "options": [
+      "Cordados",
+      "Equinodermos",
+      "Anelídeos",
+      "Placazoários"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": 11,
+    "text": "O que acontece quando os jacarés se comportam de forma territorial?",
+    "options": [
+      "Rugem enquanto exibem o rabo e o pescoço",
+      "Abrem a mandíbula e fazem um som de clique",
+      "Correm em direção à ameaça",
+      "Batem o rabo no chão"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": 12,
+    "text": "Qual é o substantivo coletivo para um grupo de corvos?",
+    "options": [
+      "Assassinato",
+      "Rebanho",
+      "Matilha",
+      "Bando"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": 13,
+    "text": "Qual é o nome verdadeiro do Grumpy Cat?",
+    "options": [
+      "Tardar Sauce",
+      "Minnie",
+      "Sauce",
+      "Brócolis"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": 14,
+    "text": "O que significa 'hippopotamus' e em que idioma?",
+    "options": [
+      "Cavalo do rio (Grego)",
+      "Porco gordo (Latim)",
+      "Cavalo do rio (Latim)",
+      "Porco gordo (Grego)"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": 15,
+    "text": "Um animal carnívoro come carne. O que um animal nucívoro come?",
+    "options": [
+      "Nozes",
+      "Algas",
+      "Nada",
+      "Frutas"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": 16,
+    "text": "A caxemira é a lã de qual tipo de animal?",
+    "options": [
+      "Cabra",
+      "Ovelha",
+      "Camelo",
+      "Lhama"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": 17,
+    "text": "Qual é o animal mais rápido do mundo?",
+    "options": [
+      "Falcão-peregrino",
+      "Chita",
+      "Mosca-cavalo",
+      "Águia dourada"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": 18,
+    "text": "Qual das seguintes cobras NÃO é venenosa?",
+    "options": [
+      "Píton-reticulada",
+      "Krait malaio",
+      "Mamba-negra",
+      "Cobra-marinha-de-barriga-amarela"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": 19,
+    "text": "Qual destas espécies NÃO está extinta?",
+    "options": [
+      "Dragão-de-komodo",
+      "Tigre-da-tasmânia",
+      "Gazel saudita",
+      "Leão-marinho japonês"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": 20,
+    "text": "Por qual motivo uma hiena-malhada 'ri'?",
+    "options": [
+      "Nervosismo",
+      "Agressividade",
+      "Excitação",
+      "Exaustão"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": 21,
+    "text": "‘Hippocampus’ é o nome em latim de qual criatura marinha?",
+    "options": [
+      "Cavalo-marinho",
+      "Polvo",
+      "Golfinho",
+      "Baleia"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": 22,
+    "text": "De que cor é o melro fêmea?",
+    "options": [
+      "Marrom",
+      "Branco",
+      "Preto",
+      "Amarelo"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": 23,
+    "text": "Do que são feitos os chifres dos rinocerontes?",
+    "options": [
+      "Queratina",
+      "Osso",
+      "Pele",
+      "Marfim"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": 24,
+    "text": "Cobras e lagartos costumam mover a língua rapidamente. Por quê?",
+    "options": [
+      "Capturar partículas de cheiro",
+      "Ameaçar outros animais",
+      "Atrair fêmeas",
+      "Provar o ar"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": 25,
+    "text": "De que são feitas as escamas de todas as cobras e da maioria dos lagartos?",
+    "options": [
+      "Queratina",
+      "Ecdise",
+      "Epiderme",
+      "Anquiloglossia"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": 26,
+    "text": "Qual é o nome científico do chimpanzé comum?",
+    "options": [
+      "Pan troglodytes",
+      "Gorilla gorilla",
+      "Pan paniscus",
+      "Panthera leo"
+    ],
+    "correctIndex": 0
+  }
+]

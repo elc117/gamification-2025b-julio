@@ -1,0 +1,277 @@
+[
+    {
+        "id": 1,
+        "text": "Qual das seguintes afirmações não é verdadeira sobre a vida de Tirésias?",
+        "options": [
+            "A deusa Atena o transformou em mulher e, anos depois, novamente em homem",
+            "Hera o cegou depois que ele concordou com Zeus em uma discussão",
+            "Navegou com os Argonautas em busca do velo de ouro",
+            "Revelou a Édipo que ele havia se casado com a própria mãe"
+        ],
+        "correctIndex": 2
+    },
+    {
+        "id": 2,
+        "text": "Em muitas tradições, quem era a esposa de Zeus?",
+        "options": [
+            "Hera",
+            "Afrodite",
+            "Atena",
+            "Héstia"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "id": 3,
+        "text": "Na mitologia nórdica, qual é o nome do símbolo comumente chamado de \"Árvore da Vida\"?",
+        "options": [
+            "Yggdrasil",
+            "As raízes de Odin",
+            "Ymir",
+            "Árvore da Terra"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "id": 4,
+        "text": "Na mitologia africana, Anansi é um trapaceiro e contador de histórias que assume a forma de qual animal?",
+        "options": [
+            "Macaco",
+            "Crocodilo",
+            "Aranha",
+            "Cão selvagem"
+        ],
+        "correctIndex": 2
+    },
+    {
+        "id": 5,
+        "text": "Qual destes deuses romanos não tem um equivalente na mitologia grega?",
+        "options": [
+            "Vulcano",
+            "Marte",
+            "Juno",
+            "Jano"
+        ],
+        "correctIndex": 3
+    },
+    {
+        "id": 6,
+        "text": "Na mitologia grega, quem matou Aquiles?",
+        "options": [
+            "Heitor",
+            "Péricles",
+            "Páris",
+            "Helena"
+        ],
+        "correctIndex": 2
+    },
+    {
+        "id": 7,
+        "text": "O antigo deus romano da guerra era conhecido como qual dos seguintes?",
+        "options": [
+            "Marte",
+            "Júpiter",
+            "Juno",
+            "Ares"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "id": 8,
+        "text": "Qual é o nome do deus grego das mortes pacíficas?",
+        "options": [
+            "Hades",
+            "Tártaro",
+            "Moros",
+            "Tânato"
+        ],
+        "correctIndex": 3
+    },
+    {
+        "id": 9,
+        "text": "Quais criaturas mitológicas têm rosto de mulher e corpo de abutre?",
+        "options": [
+            "Lâmias",
+            "Ninfas",
+            "Sereias",
+            "Harpias"
+        ],
+        "correctIndex": 3
+    },
+    {
+        "id": 10,
+        "text": "O deus nórdico Odin tinha dois corvos de estimação chamados \"Huginn\" e \"Muninn\". O que seus nomes significam?",
+        "options": [
+            "Poder e Paz",
+            "Pensamento e Memória",
+            "Guerra e Aprendizado",
+            "Sono e Vigília"
+        ],
+        "correctIndex": 1
+    },
+    {
+        "id": 11,
+        "text": "Qual das seguintes não é uma das Moiras (as Parcas) gregas?",
+        "options": [
+            "Átropos",
+            "Láquesis",
+            "Cloto",
+            "Narciso"
+        ],
+        "correctIndex": 3
+    },
+    {
+        "id": 12,
+        "text": "Esta figura mitológica grega é a deusa da estratégia de batalha (entre outras coisas).",
+        "options": [
+            "Ares",
+            "Atena",
+            "Apolo",
+            "Ártemis"
+        ],
+        "correctIndex": 1
+    },
+    {
+        "id": 13,
+        "text": "O nome grego de Netuno era...",
+        "options": [
+            "Apolo",
+            "Poseidon",
+            "Zeus",
+            "Ares"
+        ],
+        "correctIndex": 1
+    },
+    {
+        "id": 14,
+        "text": "Qual é o nome do primeiro ser humano na mitologia nórdica?",
+        "options": [
+            "Ask",
+            "Asger",
+            "Ake",
+            "Ásmund"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "id": 15,
+        "text": "Quem era o rei dos deuses na mitologia grega antiga?",
+        "options": [
+            "Poseidon",
+            "Zeus",
+            "Hermes",
+            "Apolo"
+        ],
+        "correctIndex": 1
+    },
+    {
+        "id": 16,
+        "text": "Qual deus grego e romano era conhecido como o deus da música, verdade e profecia, cura, sol e luz, poesia e mais?",
+        "options": [
+            "Apolo",
+            "Afrodite",
+            "Atena",
+            "Ártemis"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "id": 17,
+        "text": "A marca Nike de roupas e calçados recebeu seu nome da deusa grega de quê?",
+        "options": [
+            "Honra",
+            "Força",
+            "Coragem",
+            "Vitória"
+        ],
+        "correctIndex": 3
+    },
+    {
+        "id": 18,
+        "text": "Na mitologia nórdica, Balder foi morto por Loki com uma lança mágica feita de qual planta?",
+        "options": [
+            "Azevinho",
+            "Visco",
+            "Cicuta",
+            "Acônito"
+        ],
+        "correctIndex": 1
+    },
+    {
+        "id": 19,
+        "text": "Um minotauro é meio humano e meio o quê?",
+        "options": [
+            "Cavalo",
+            "Águia",
+            "Vaca",
+            "Touro"
+        ],
+        "correctIndex": 3
+    },
+    {
+        "id": 20,
+        "text": "Quem é o deus da guerra na mitologia polinésia?",
+        "options": [
+            "Māui",
+            "‘Oro",
+            "Hina",
+            "Kohara"
+        ],
+        "correctIndex": 1
+    },
+    {
+        "id": 21,
+        "text": "Os maoris acreditam que qual nação insular foi fundada por Kupe, que a descobriu sob uma longa nuvem branca?",
+        "options": [
+            "Nova Zelândia",
+            "Fiji",
+            "Vanuatu",
+            "Havaí"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "id": 22,
+        "text": "De acordo com o folclore japonês, qual é o alimento favorito do Kappa?",
+        "options": [
+            "Pepinos",
+            "Abóbora japonesa (kabocha)",
+            "Berinjela (nasu)",
+            "Soba"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "id": 23,
+        "text": "Na mitologia grega, quem liderou os Argonautas em busca do velo de ouro?",
+        "options": [
+            "Dédalo",
+            "Ulisses",
+            "Jasão",
+            "Cástor"
+        ],
+        "correctIndex": 2
+    },
+    {
+        "id": 24,
+        "text": "Qual deus grego lançou uma maçã dourada com as palavras \"para a mais bela\" no meio do banquete dos deuses?",
+        "options": [
+            "Ares",
+            "Hades",
+            "Éris",
+            "Ártemis"
+        ],
+        "correctIndex": 2
+    },
+    {
+        "id": 25,
+        "text": "Com qual animal a rainha Pasífae dormiu antes de dar à luz o Minotauro, segundo a mitologia grega?",
+        "options": [
+            "Porco",
+            "Cavalo",
+            "Touro",
+            "Boi"
+        ],
+        "correctIndex": 2
+    }
+]

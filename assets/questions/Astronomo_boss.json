@@ -1,0 +1,332 @@
+[
+    {
+        "id": 1,
+        "text": "Qual é a unidade de indutância elétrica?",
+        "options": [
+            "Coulomb",
+            "Mho",
+            "Weber",
+            "Henry"
+        ],
+        "correctIndex": 3
+    },
+    {
+        "id": 2,
+        "text": "Qual desses é um dispositivo semicondutor amplificador?",
+        "options": [
+            "Transistor",
+            "Diodo",
+            "Tubo",
+            "Junção P-N"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "id": 3,
+        "text": "Qual desses compostos químicos NÃO é encontrado no ácido gástrico?",
+        "options": [
+            "Cloreto de potássio",
+            "Ácido clorídrico",
+            "Ácido sulfúrico",
+            "Cloreto de sódio"
+        ],
+        "correctIndex": 2
+    },
+    {
+        "id": 4,
+        "text": "Quantos prótons há em um átomo de oxigênio?",
+        "options": [
+            "Dois",
+            "Oito",
+            "Quatro",
+            "Seis"
+        ],
+        "correctIndex": 1
+    },
+    {
+        "id": 5,
+        "text": "Em física quântica, qual dessas partículas teóricas ainda não foi observada?",
+        "options": [
+            "Gluon",
+            "Gráviton",
+            "Bóson Z",
+            "Neutrino tau"
+        ],
+        "correctIndex": 1
+    },
+    {
+        "id": 6,
+        "text": "Quantos tipos de quarks existem no Modelo Padrão da física?",
+        "options": [
+            "4",
+            "6",
+            "3",
+            "2"
+        ],
+        "correctIndex": 1
+    },
+    {
+        "id": 7,
+        "text": "Na escala de Scoville, qual é o composto químico mais ardente?",
+        "options": [
+            "Resiniferatoxina",
+            "Dihidrocapsaicina",
+            "Capsaicina",
+            "Tinyatoxina"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "id": 8,
+        "text": "Qual dos seguintes líquidos é o menos viscoso a 25°C?",
+        "options": [
+            "Mercúrio",
+            "Benzeno",
+            "Acetona",
+            "Água"
+        ],
+        "correctIndex": 2
+    },
+    {
+        "id": 9,
+        "text": "Que evento de extinção em massa foi causado por uma colisão de asteroide e eliminou a maioria dos dinossauros não aviários?",
+        "options": [
+            "Cretáceo–Paleógeno",
+            "Triássico–Jurássico",
+            "Ordoviciano–Siluriano",
+            "Permiano–Triássico"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "id": 10,
+        "text": "Quantos objetos equivalem a um mol?",
+        "options": [
+            "6,002 × 10^23",
+            "6,022 × 10^22",
+            "6,002 × 10^22",
+            "6,022 × 10^23"
+        ],
+        "correctIndex": 3
+    },
+    {
+        "id": 11,
+        "text": "Em física, a conservação de energia e a conservação de momento são consequências de qual teorema?",
+        "options": [
+            "Teorema de Carnot",
+            "Teorema de Wick",
+            "Teorema de Bell",
+            "Teorema de Noether"
+        ],
+        "correctIndex": 3
+    },
+    {
+        "id": 12,
+        "text": "Qual é a fórmula molecular da glicose?",
+        "options": [
+            "C2H4O2",
+            "CH4",
+            "C6H12O6",
+            "K+"
+        ],
+        "correctIndex": 2
+    },
+    {
+        "id": 13,
+        "text": "Qual elemento da tabela periódica possui 92 elétrons?",
+        "options": [
+            "Enxofre",
+            "Ferro",
+            "Urânio",
+            "Hidrogênio"
+        ],
+        "correctIndex": 2
+    },
+    {
+        "id": 14,
+        "text": "Qual é o nome químico do H₂O?",
+        "options": [
+            "Dióxido de manganês",
+            "Cloreto de amônio",
+            "Carbonato de sódio anidro",
+            "Monóxido de di-hidrogênio"
+        ],
+        "correctIndex": 3
+    },
+    {
+        "id": 15,
+        "text": "Qual é a fórmula molecular do ozônio?",
+        "options": [
+            "N₂O",
+            "SO₄",
+            "O₃",
+            "C₆H₂O₆"
+        ],
+        "correctIndex": 2
+    },
+    {
+        "id": 16,
+        "text": "Qual princípio da física relaciona o fluxo elétrico líquido através de uma superfície fechada com a carga dentro dela?",
+        "options": [
+            "Lei de Ampère",
+            "Lei de Biot–Savart",
+            "Lei de Gauss",
+            "Lei de Faraday"
+        ],
+        "correctIndex": 2
+    },
+    {
+        "id": 17,
+        "text": "Qual desses metais, quando queimado, produz uma chama branca intensa?",
+        "options": [
+            "Chumbo",
+            "Cobre",
+            "Magnésio",
+            "Lítio"
+        ],
+        "correctIndex": 2
+    },
+    {
+        "id": 18,
+        "text": "Qual é o nome dado ao som ilusório de uma nota que parece subir infinitamente?",
+        "options": [
+            "Efeito McGurk",
+            "Efeito Fransen",
+            "Tom de Shepard",
+            "Ilusão de Glissandro"
+        ],
+        "correctIndex": 2
+    },
+    {
+        "id": 19,
+        "text": "Em qual constelação está localizado o centro da Via Láctea?",
+        "options": [
+            "Ofiúco",
+            "Capricórnio",
+            "Escorpião",
+            "Sagitário"
+        ],
+        "correctIndex": 3
+    },
+    {
+        "id": 20,
+        "text": "Qual desses materiais plásticos é comumente usado em janelas, calhas e canos de drenagem?",
+        "options": [
+            "Poliestireno (PS)",
+            "Polipropileno (PP)",
+            "Polietileno (PE)",
+            "Policloreto de vinila (PVC)"
+        ],
+        "correctIndex": 3
+    },
+    {
+        "id": 21,
+        "text": "Qual força fundamental é responsável pela coesão dos núcleos atômicos?",
+        "options": [
+            "Força forte",
+            "Força fraca",
+            "Força eletromagnética",
+            "Gravidade"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "id": 22,
+        "text": "Qual partícula é considerada sua própria antipartícula?",
+        "options": [
+            "Fóton",
+            "Elétron",
+            "Píon",
+            "Nêutron"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "id": 23,
+        "text": "Qual cientista formulou o princípio da incerteza?",
+        "options": [
+            "Niels Bohr",
+            "Werner Heisenberg",
+            "Albert Einstein",
+            "Max Planck"
+        ],
+        "correctIndex": 1
+    },
+    {
+        "id": 24,
+        "text": "Na química quântica, qual número quântico descreve a orientação do spin de um elétron?",
+        "options": [
+            "Número quântico principal",
+            "Número quântico magnético",
+            "Número quântico azimutal",
+            "Número quântico de spin"
+        ],
+        "correctIndex": 3
+    },
+    {
+        "id": 25,
+        "text": "Qual lei afirma que o volume de um gás é inversamente proporcional à sua pressão a temperatura constante?",
+        "options": [
+            "Lei de Boyle",
+            "Lei de Charles",
+            "Lei de Gay-Lussac",
+            "Lei de Dalton"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "id": 26,
+        "text": "Qual físico propôs o conceito de 'quantização' da energia?",
+        "options": [
+            "Erwin Schrödinger",
+            "Max Planck",
+            "Isaac Newton",
+            "James Clerk Maxwell"
+        ],
+        "correctIndex": 1
+    },
+    {
+        "id": 27,
+        "text": "Como é chamada a partícula hipotética proposta para explicar a matéria escura?",
+        "options": [
+            "Gluon",
+            "Neutrino",
+            "WIMP",
+            "Bóson de Higgs"
+        ],
+        "correctIndex": 2
+    },
+    {
+        "id": 28,
+        "text": "Qual é a unidade de medida da capacitância elétrica?",
+        "options": [
+            "Henry (H)",
+            "Farad (F)",
+            "Ohm (Ω)",
+            "Weber (Wb)"
+        ],
+        "correctIndex": 1
+    },
+    {
+        "id": 29,
+        "text": "Qual dessas estrelas representa o estágio final de evolução de uma estrela massiva?",
+        "options": [
+            "Anã branca",
+            "Estrela de nêutrons",
+            "Gigante vermelha",
+            "Estrela T Tauri"
+        ],
+        "correctIndex": 1
+    },
+    {
+        "id": 30,
+        "text": "Qual fenômeno explica o deslocamento para o vermelho observado em galáxias distantes?",
+        "options": [
+            "Efeito Doppler",
+            "Efeito Compton",
+            "Dispersão Rayleigh",
+            "Efeito Zeeman"
+        ],
+        "correctIndex": 0
+    }
+]

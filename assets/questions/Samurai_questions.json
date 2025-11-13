@@ -1,0 +1,332 @@
+[
+    {
+        "id": 1,
+        "text": "Em que rua começou o Grande Incêndio de Londres de 1666?",
+        "options": [
+            "Baker Street",
+            "Houses of Parliament",
+            "Pudding Lane",
+            "St. Paul's Cathedral"
+        ],
+        "correctIndex": 2
+    },
+    {
+        "id": 2,
+        "text": "Em que ano ocorreu o derretimento da usina nuclear de Chernobyl?",
+        "options": [
+            "1998",
+            "1991",
+            "1986",
+            "1975"
+        ],
+        "correctIndex": 2
+    },
+    {
+        "id": 3,
+        "text": "Qual era o nome comumente dado às antigas rotas comerciais que conectavam o Oriente e o Ocidente da Eurásia?",
+        "options": [
+            "Rota da Seda",
+            "Rota do Sal",
+            "Rota das Especiarias",
+            "Rota do Barro"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "id": 4,
+        "text": "Qual destas não foi uma praia de desembarque na Invasão da Normandia?",
+        "options": [
+            "Silver",
+            "Juno",
+            "Sword",
+            "Gold"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "id": 5,
+        "text": "Qual jogo foi eleito Jogo do Ano em 2018?",
+        "options": [
+            "Red Dead Redemption 2",
+            "God of War",
+            "Detroit: Become Human",
+            "A Way Out"
+        ],
+        "correctIndex": 1
+    },
+    {
+        "id": 6,
+        "text": "Qual marechal de campo alemão era conhecido como 'A Raposa do Deserto'?",
+        "options": [
+            "Erwin Rommel",
+            "Wilhelm List",
+            "Wolfram Freiherr von Richthofen",
+            "Ernst Busch"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "id": 7,
+        "text": "Em 1453, qual importante cidade caiu?",
+        "options": [
+            "Roma",
+            "Atenas",
+            "Constantinopla",
+            "Hamburgo"
+        ],
+        "correctIndex": 2
+    },
+    {
+        "id": 8,
+        "text": "Durante a Segunda Guerra Mundial, em 1945, os Estados Unidos lançaram bombas atômicas sobre Hiroshima e qual outra cidade japonesa?",
+        "options": [
+            "Tóquio",
+            "Nagasaki",
+            "Kagoshima",
+            "Kawasaki"
+        ],
+        "correctIndex": 1
+    },
+    {
+        "id": 9,
+        "text": "O alfabeto romano original não possuía as seguintes letras, EXCETO:",
+        "options": [
+            "J",
+            "W",
+            "X",
+            "U"
+        ],
+        "correctIndex": 2
+    },
+    {
+        "id": 10,
+        "text": "Quem foi o primeiro americano a ir ao espaço?",
+        "options": [
+            "Jim Lovell",
+            "Alan Shephard",
+            "Neil Armstrong",
+            "John Glenn"
+        ],
+        "correctIndex": 1
+    },
+    {
+        "id": 11,
+        "text": "O abolicionista John Brown invadiu o arsenal em qual cidade da Virgínia?",
+        "options": [
+            "Richmond",
+            "Martinsburg",
+            "Harrisonburg",
+            "Harper's Ferry"
+        ],
+        "correctIndex": 3
+    },
+    {
+        "id": 12,
+        "text": "Quem foi o primeiro governante do Haiti após o país conquistar sua independência?",
+        "options": [
+            "Jean-Jacques Dessalines",
+            "Henri Christophe",
+            "Toussaint Louverture",
+            "Alexandre Petion"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "id": 13,
+        "text": "Em qual guerra ocorreram os bombardeios atômicos de Hiroshima e Nagasaki?",
+        "options": [
+            "Primeira Guerra Sino-Japonesa",
+            "Segunda Guerra Mundial",
+            "Guerra Russo-Japonesa",
+            "Primeira Guerra Mundial"
+        ],
+        "correctIndex": 1
+    },
+    {
+        "id": 14,
+        "text": "Qual dos seguintes países NÃO era uma potência do Eixo durante a Segunda Guerra Mundial?",
+        "options": [
+            "Japão",
+            "Alemanha",
+            "União Soviética",
+            "Itália"
+        ],
+        "correctIndex": 2
+    },
+    {
+        "id": 15,
+        "text": "Quem estava entre os mortos na tragédia do acidente de avião em Smolensk, Rússia, em 2010?",
+        "options": [
+            "Albert Putin",
+            "Bang-Ding Ow",
+            "Pope John Paul II",
+            "O presidente da Polônia"
+        ],
+        "correctIndex": 3
+    },
+    {
+        "id": 16,
+        "text": "Em 1939, Grã-Bretanha e França declararam guerra à Alemanha após a invasão de qual país?",
+        "options": [
+            "Polônia",
+            "Tchecoslováquia",
+            "Áustria",
+            "Hungria"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "id": 17,
+        "text": "O colapso da União Soviética ocorreu em qual ano?",
+        "options": [
+            "1991",
+            "1990",
+            "1891",
+            "1992"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "id": 18,
+        "text": "Qual dos seguintes povos antigos NÃO era classificado como helênico (grego)?",
+        "options": [
+            "Aqueus",
+            "Dórios",
+            "Ilírios",
+            "Jônios"
+        ],
+        "correctIndex": 2
+    },
+    {
+        "id": 19,
+        "text": "Quem foi o primeiro presidente dos Estados Unidos?",
+        "options": [
+            "James K. Polk",
+            "George Washington",
+            "Thomas Jefferson",
+            "James Madison"
+        ],
+        "correctIndex": 1
+    },
+    {
+        "id": 20,
+        "text": "A ideia do socialismo foi articulada e promovida por quem?",
+        "options": [
+            "Vladimir Putin",
+            "Karl Marx",
+            "Joseph Stalin",
+            "Vladimir Lenin"
+        ],
+        "correctIndex": 1
+    },
+    {
+        "id": 21,
+        "text": "Quais dois países formaram uma comunidade (commonwealth) do século XVI ao XVIII?",
+        "options": [
+            "Polônia e Lituânia",
+            "Coreia do Norte e Coreia do Sul",
+            "Bangladesh e Butão",
+            "Hutu e Ruanda"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "id": 22,
+        "text": "Qual país ingressou na União Europeia em 2013?",
+        "options": [
+            "Bulgária",
+            "Croácia",
+            "Turquia",
+            "Eslovênia"
+        ],
+        "correctIndex": 1
+    },
+    {
+        "id": 23,
+        "text": "Em que ano começou a Primeira Guerra Mundial?",
+        "options": [
+            "1925",
+            "1914",
+            "1919",
+            "1905"
+        ],
+        "correctIndex": 1
+    },
+    {
+        "id": 24,
+        "text": "Qual país moderno é conhecido como 'O Cemitério dos Impérios'?",
+        "options": [
+            "Rússia",
+            "Afeganistão",
+            "China",
+            "Iraque"
+        ],
+        "correctIndex": 1
+    },
+    {
+        "id": 25,
+        "text": "Qual dos seguintes países africanos teve mais sucesso em resistir à colonização?",
+        "options": [
+            "Etiópia",
+            "Namíbia",
+            "Congo",
+            "Costa do Marfim"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "id": 26,
+        "text": "Qual líder mundial é famoso pela frase 'Que comam bolo', embora se diga que nunca a tenha dito?",
+        "options": [
+            "Czar Nicolau II",
+            "Maria Antonieta",
+            "Elizabeth I",
+            "Henrique VIII"
+        ],
+        "correctIndex": 1
+    },
+    {
+        "id": 27,
+        "text": "A qual partido político Abraham Lincoln pertencia quando foi eleito presidente dos EUA?",
+        "options": [
+            "Independente",
+            "Democrata",
+            "Republicano",
+            "Whig"
+        ],
+        "correctIndex": 2
+    },
+    {
+        "id": 28,
+        "text": "Qual destes países NÃO fazia parte das Potências Centrais durante a Primeira Guerra Mundial?",
+        "options": [
+            "Espanha",
+            "Alemanha",
+            "Turquia",
+            "Áustria-Hungria"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "id": 29,
+        "text": "Quem foi o primeiro primeiro-ministro do Canadá?",
+        "options": [
+            "Robert Borden",
+            "John Macdonald",
+            "John Abbott",
+            "Alexander Mackenzie"
+        ],
+        "correctIndex": 1
+    },
+    {
+        "id": 30,
+        "text": "O Império Otomano foi dissolvido após sua derrota em qual guerra?",
+        "options": [
+            "Guerra da Crimeia",
+            "Primeira Guerra Mundial",
+            "Revolução Sérvia",
+            "Segunda Guerra dos Bálcãs"
+        ],
+        "correctIndex": 1
+    }
+]

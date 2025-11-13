@@ -1,0 +1,222 @@
+[
+    {
+        "id": 1,
+        "text": "Qual das seguintes NÃO foi uma das dez ofensivas de Josef Stalin durante a Segunda Guerra Mundial?",
+        "options": [
+            "Operação Bagration",
+            "Ofensiva da Crimeia",
+            "Ofensiva de Leningrado-Novgorod",
+            "Ofensiva do Vístula-Oder"
+        ],
+        "correctIndex": 3
+    },
+    {
+        "id": 2,
+        "text": "Qual era o nome da operação ofensiva alemã em outubro de 1941 para conquistar Moscou antes do inverno?",
+        "options": [
+            "Operação Girassol",
+            "Caso Azul",
+            "Operação Tufão",
+            "Operação Barbarossa"
+        ],
+        "correctIndex": 2
+    },
+    {
+        "id": 3,
+        "text": "Qual batalha naval foi considerada o ponto de virada do teatro do Oceano Pacífico durante a Segunda Guerra Mundial?",
+        "options": [
+            "Batalha de Midway",
+            "Ataque a Pearl Harbor",
+            "Batalha do Mar de Coral",
+            "Ataque à Ilha de Truk"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "id": 4,
+        "text": "Quando a Lituânia declarou independência da União Soviética?",
+        "options": [
+            "25 de dezembro de 1991",
+            "11 de março de 1990",
+            "20 de abril de 1989",
+            "5 de dezembro de 1991"
+        ],
+        "correctIndex": 1
+    },
+    {
+        "id": 5,
+        "text": "Qual desses físicos auxiliou a Alemanha Nazista na produção de uma arma nuclear?",
+        "options": [
+            "Albert Einstein",
+            "Werner Heisenberg",
+            "John von Neumann",
+            "Max Planck"
+        ],
+        "correctIndex": 1
+    },
+    {
+        "id": 6,
+        "text": "Qual microestado é considerado o que possui a constituição mais antiga ainda em vigor?",
+        "options": [
+            "Andorra",
+            "San Marino",
+            "Monaco",
+            "Saint Kitts e Nevis"
+        ],
+        "correctIndex": 1
+    },
+    {
+        "id": 7,
+        "text": "O pianista Frédéric Chopin foi um compositor de qual era musical?",
+        "options": [
+            "Romântica",
+            "Barroca",
+            "Clássica",
+            "Renascentista"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "id": 8,
+        "text": "Em que ano ocorreu o ataque com gás sarin no metrô de Tóquio?",
+        "options": [
+            "1991",
+            "1995",
+            "2011",
+            "2001"
+        ],
+        "correctIndex": 1
+    },
+    {
+        "id": 9,
+        "text": "Toussaint Louverture liderou uma revolta de escravos bem-sucedida em qual país?",
+        "options": [
+            "França",
+            "Cuba",
+            "Haiti",
+            "Estados Unidos"
+        ],
+        "correctIndex": 2
+    },
+    {
+        "id": 10,
+        "text": "Qual dessas posições o astrônomo e físico Isaac Newton NÃO ocupou?",
+        "options": [
+            "Membro do Parlamento",
+            "Professor de Matemática",
+            "Guardião da Casa da Moeda Real",
+            "Inspetor da Cidade de Londres"
+        ],
+        "correctIndex": 3
+    },
+    {
+        "id": 11,
+        "text": "Durante a Primeira Guerra Mundial, os monarcas de quais nações eram parentes de sangue?",
+        "options": [
+            "França, Rússia e Alemanha",
+            "Inglaterra, Alemanha e Rússia",
+            "Alemanha, Espanha e Áustria",
+            "Sérvia, Rússia e Croácia"
+        ],
+        "correctIndex": 1
+    },
+    {
+        "id": 12,
+        "text": "Quando começou a Revolução Francesa?",
+        "options": [
+            "5 de abril de 1789",
+            "12 de abril de 1789",
+            "5 de maio de 1789",
+            "6 de maio de 1799"
+        ],
+        "correctIndex": 2
+    },
+    {
+        "id": 13,
+        "text": "Qual era o objetivo da 'Revolução dos Guarda-Chuvas' em Hong Kong, em 2014?",
+        "options": [
+            "Voltar ao domínio britânico",
+            "Obter sufrágio universal genuíno",
+            "Independência de Hong Kong",
+            "Reduzir impostos"
+        ],
+        "correctIndex": 1
+    },
+    {
+        "id": 14,
+        "text": "Com quantos anos o rei Henrique V faleceu?",
+        "options": [
+            "35",
+            "62",
+            "73",
+            "87"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "id": 15,
+        "text": "A quem é atribuído originalmente o argumento ontológico para provar a existência de Deus?",
+        "options": [
+            "Immanuel Kant",
+            "Aristóteles",
+            "Anselmo de Cantuária",
+            "René Descartes"
+        ],
+        "correctIndex": 2
+    },
+    {
+        "id": 16,
+        "text": "Quem assassinou o presidente James A. Garfield?",
+        "options": [
+            "Charles Guiteau",
+            "Leon Czolgosz",
+            "John Wilkes Booth",
+            "Sirhan Sirhan"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "id": 17,
+        "text": "Quem foi o primeiro homem a viajar para o espaço duas vezes?",
+        "options": [
+            "Yuri Gagarin",
+            "Charles Conrad",
+            "Vladimir Komarov",
+            "Gus Grissom"
+        ],
+        "correctIndex": 3
+    },
+    {
+        "id": 18,
+        "text": "Qual país do Sudeste Asiático era conhecido anteriormente como 'Lan Xang'?",
+        "options": [
+            "Vietnã",
+            "Laos",
+            "Tailândia",
+            "Camboja"
+        ],
+        "correctIndex": 1
+    },
+    {
+        "id": 19,
+        "text": "Antes de as colônias americanas adotarem o calendário gregoriano em 1752, em que data começava o ano novo?",
+        "options": [
+            "25 de março",
+            "25 de setembro",
+            "1º de junho",
+            "1º de dezembro"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "id": 20,
+        "text": "Qual foi a última colônia cedida pelo Reino Unido, marcando o fim do Império Britânico?",
+        "options": [
+            "Hong Kong",
+            "Irlanda",
+            "Índia",
+            "Austrália"
+        ],
+        "correctIndex": 0
+    }
+]
