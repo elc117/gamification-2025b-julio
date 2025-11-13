@@ -11,10 +11,10 @@ public class MainMenuScreen extends GameScreen {
     private ButtonGame playButton;
 
     public MainMenuScreen(MainGame game) {
-        super(game, "images.atlas", "Dio_Brando");
+        super(game, "assets/assets.atlas", "Background");
         Gdx.input.setInputProcessor(stage);
 
-        playButton = new ButtonGame("Jogar", "assets.atlas", "Button_Unpressed", "Button_Pressed", 1.5f);
+        this.playButton = new ButtonGame("Jogar", "assets/assets.atlas", "Button_Unpressed", "Button_Pressed", 1.5f);
 
         Table table = new Table();
         table.setFillParent(true);
@@ -23,7 +23,6 @@ public class MainMenuScreen extends GameScreen {
         table.row();
         stage.addActor(table);
 
-        // Quando o botão "Jogar" for clicado, troca para a tela de jogo
         playButton.getButton().addListener(new ClickListener() {
             @Override
             public void clicked(InputEvent event, float x, float y) {
@@ -50,4 +49,5 @@ public class MainMenuScreen extends GameScreen {
         if (playButton != null) playButton.dispose();
         super.dispose();
     }
+
 }
