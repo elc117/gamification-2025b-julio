@@ -15,6 +15,11 @@ public class Character extends Sprite {
     };
 
     private State currentState;
+    private boolean pendingAnimation;
+    private float delayedHurtTimer;
+    private float hurtTimer = 0.15f;
+    private float smoothX, smoothY;
+    private float slideSpeed = 5f;
 
     public World world;
     public Body body;
@@ -34,9 +39,11 @@ public class Character extends Sprite {
         this.health = health;
         this.atlas = new TextureAtlas(atlas);
         this.scale = scale;
+        this.smoothX = posX;
+        this.smoothY = posY;
 
         this.idleAnimation = new Animation<>(0.25f, this.atlas.findRegions("Idle"), Animation.PlayMode.LOOP);
-        this.attackAnimation = new Animation<>(0.2f, this.atlas.findRegions("Attack"), Animation.PlayMode.NORMAL);
+        this.attackAnimation = new Animation<>(0.15f, this.atlas.findRegions("Attack"), Animation.PlayMode.NORMAL);
         this.hurtAnimation = new Animation<>(0.25f, this.atlas.findRegions("Hurt"), Animation.PlayMode.NORMAL);
         this.currentState = State.Idle;
         this.stateTimer = 0;
@@ -45,7 +52,7 @@ public class Character extends Sprite {
         setRegion(characterRegion);
     }
 
-    public Character (World world, String atlas, Float posX, Float posy, Float scale) {
+    public Character(World world, String atlas, Float posX, Float posy, Float scale) {
         this(world, 3, atlas, posX, posy, scale);
     }
 
@@ -55,6 +62,18 @@ public class Character extends Sprite {
 
     public void update(float dt, Float posX, Float posY) {
         stateTimer += dt;
+
+        if (pendingAnimation) {
+            delayedHurtTimer += dt;
+
+            if (delayedHurtTimer >= hurtTimer) {
+                pendingAnimation = false;
+                delayedHurtTimer = 0;
+                currentState = State.Hurt;
+                stateTimer = 0;
+            }
+
+        }
 
         switch (currentState) {
             case Attack:
@@ -83,9 +102,12 @@ public class Character extends Sprite {
         float frameHeight = characterRegion.getRegionHeight() / scale;
         setSize(frameWidth, frameHeight);
 
+        smoothX += (posX - smoothX) * dt * slideSpeed;
+        smoothY += (posY - smoothY) * dt * slideSpeed;
+
         setPosition(
-                body.getPosition().x - getWidth() / 2f + posX,
-                body.getPosition().y - getHeight() / 8f + posY);
+                body.getPosition().x - getWidth() / 2f + smoothX,
+                body.getPosition().y - getHeight() / 4f + smoothY);
     }
 
     public void defineCharacter(Float posX, Float posY) {
@@ -112,12 +134,20 @@ public class Character extends Sprite {
     }
 
     public void hurt() {
-        currentState = State.Hurt;
-        stateTimer = 0;
+        delayedHurtTimer = 0;
+        pendingAnimation = true;
+    }
+
+    public boolean getState() {
+        return currentState == State.Idle;
     }
 
     public void restoreLife() {
         this.health = 3;
+    }
+
+    public boolean isBusy() {
+        return currentState == State.Attack || currentState == State.Hurt || pendingAnimation;
     }
 
 }
