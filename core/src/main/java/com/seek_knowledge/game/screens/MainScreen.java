@@ -43,21 +43,22 @@ public class MainScreen extends GameScreen {
         super.viewport = new StretchViewport(WORLD_WIDTH / 2, WORLD_HEIGHT / 2, camera);
 
         this.world = new World(new Vector2(0, -10), true);
-        this.player = new Character(world, 3, "characters/" + characterName + ".atlas", 200f, 46f, 0.3f);
+        this.player = new Character(world, 3, "characters/" + characterName + ".atlas", 320f, 46f, 0.35f);
         this.enemy = new Character(world, 1, "enemies/" + characterName + "/enemy1.atlas", enemyWidth, 55f, 0.3f);
 
         this.stage = new Stage(super.viewport);
         Gdx.input.setInputProcessor(stage);
 
-        this.atlas = new TextureAtlas("hearts.atlas");
+        this.atlas = new TextureAtlas("assets/hearts.atlas");
         this.skin = new Skin();
         skin.addRegions(atlas);
         this.heartTexture = skin.getRegion("3hearts");
         Image heartImage = new Image(heartTexture);
+        heartImage.setScale(1.5f);
         this.phaseManager = new PhaseManager(player, enemy, world, enemyWidth, viewport, stage, skin, characterName, map, mapRenderer, mapLoader);
 
         Table table = phaseManager.getCurrentQuestion().getTable();
-        table.add(heartImage).padTop(30);
+        table.add(heartImage).padTop(50);
         phaseManager.addListener(heartImage, table, game, this);
         stage.addActor(table);
 
