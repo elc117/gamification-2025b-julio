@@ -87,12 +87,14 @@ public class PhaseManager {
 
     public void addListener(final Image heartImage, Table table, MainGame game, Screen screen) {
         final Image enemyImage = new Image(heartTexture);
-        table.add(enemyImage).padTop(10);
+        enemyImage.setScale(2f);
+        table.add(enemyImage).padTop(50);
         enemyImage.setDrawable(null);
 
         ClickListener listener = new ClickListener() {
             @Override
             public void clicked(InputEvent event, float x, float y) {
+                currentQuestion.blockInput();
                 int index = -1;
                 for (int i = 0; i < currentQuestion.getOptionsButtons().length; i++) {
                     if (event.getListenerActor() == currentQuestion.getOptionsButtons()[i].getButton()) {
@@ -112,16 +114,7 @@ public class PhaseManager {
                         enemy.takeDamage(1);
                         enemy.hurt();
                         if (enemy.getHealth() == 0) {
-                            checkGameFinished();
-                            currentIndex = 0;
-                            changeMap("maps/" + characterName + "_World" + currentPhase + ".tmx");
-                            isBossLevel = false;
-                            loadJson("questions/" + characterName + "_questions.json");
-                            enemyImage.setDrawable(null);
-                            enemy = new Character(world, 1,
-                                    "enemies/" + characterName + "/enemy" + (currentIndex + 1) + ".atlas", enemyWidth,
-                                    70f, 0.3f);
-                            player.restoreLife();
+                            endBossLevel();
                             updatePlayerImage(heartImage);
                         } else {
                             updateEnemyImage(enemyImage);
@@ -133,7 +126,8 @@ public class PhaseManager {
 
                     } else if (!isBossLevel) {
                         enemy = new Character(world, 1,
-                                "enemies/" + characterName + "/enemy" + (currentIndex + 1) + ".atlas", enemyWidth, 70f,
+                                "enemies/" + characterName + "/enemy" + (currentIndex + 1) + ".atlas", enemyWidth,
+                                70f,
                                 0.3f);
                     }
 
@@ -157,9 +151,22 @@ public class PhaseManager {
                 isBossLevel = true;
                 loadJson("questions/" + characterName + "_boss.json");
                 enemy = new Character(world, 3, "enemies/" + characterName + "/boss" + (currentPhase) + ".atlas",
-                        enemyWidth, 46f, 0.25f);
+                        enemyWidth, 46f, 0.27f);
                 updateEnemyImage(img);
                 currentIndex = 0;
+            }
+
+            private void endBossLevel() {
+                checkGameFinished();
+                currentIndex = 0;
+                changeMap("maps/" + characterName + "_World" + currentPhase + ".tmx");
+                isBossLevel = false;
+                loadJson("questions/" + characterName + "_questions.json");
+                enemyImage.setDrawable(null);
+                enemy = new Character(world, 1,
+                        "enemies/" + characterName + "/enemy" + (currentIndex + 1) + ".atlas", enemyWidth,
+                        70f, 0.3f);
+                player.restoreLife();
             }
 
             private void updateQuestion() {
@@ -184,6 +191,7 @@ public class PhaseManager {
                     updatePlayerImage(heartImage);
                 }
             }
+
         };
 
         for (ButtonGame btn : currentQuestion.getOptionsButtons()) {
@@ -210,6 +218,10 @@ public class PhaseManager {
         if (enemy != null) {
             enemy.update(delta, -1.1f, 0.2f);
             enemy.draw(batch);
+        }
+
+        if (!player.isBusy()) {
+            currentQuestion.enableInput();
         }
     }
 
