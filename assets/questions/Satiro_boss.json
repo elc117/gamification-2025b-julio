@@ -3,23 +3,23 @@
         "id": 1,
         "text": "Qual ave nasce com garras nos dígitos das asas?",
         "options": [
+            "Secretary bird",
             "Hoatzin",
             "Cassowary",
-            "Secretary bird",
             "Cormorant"
         ],
-        "correctIndex": 0
+        "correctIndex": 1
     },
     {
         "id": 2,
         "text": "Qual é o nome científico do periquito-australiano?",
         "options": [
+            "Nymphicus hollandicus",
             "Melopsittacus undulatus",
             "Ara macao",
-            "Pyrrhura molinae",
-            "Nymphicus hollandicus"
+            "Pyrrhura molinae"
         ],
-        "correctIndex": 0
+        "correctIndex": 1
     },
     {
         "id": 3,
@@ -27,8 +27,8 @@
         "options": [
             "Gooty",
             "Silver Stripe",
-            "Woebegone",
-            "Hopper"
+            "Hopper",
+            "Woebegone"
         ],
         "correctIndex": 0
     },
@@ -36,21 +36,21 @@
         "id": 4,
         "text": "Qual dessas é uma colônia de pólipos e não uma água-viva?",
         "options": [
-            "Homem-de-guerra-português",
-            "Irukandji",
+            "Sea Wasp",
             "Sea Nettle",
-            "Sea Wasp"
+            "Irukandji",
+            "Homem-de-guerra-português"
         ],
-        "correctIndex": 0
+        "correctIndex": 3
     },
     {
         "id": 5,
         "text": "Qual desses animais NÃO é um lagarto?",
         "options": [
             "Tuatara",
+            "Green Iguana",
             "Komodo Dragon",
-            "Gila Monster",
-            "Green Iguana"
+            "Gila Monster"
         ],
         "correctIndex": 0
     },
@@ -58,55 +58,55 @@
         "id": 6,
         "text": "Qual é o nome científico do guepardo?",
         "options": [
-            "Acinonyx jubatus",
-            "Panthera onca",
             "Lynx rufus",
-            "Felis catus"
+            "Felis catus",
+            "Panthera onca",
+            "Acinonyx jubatus"
         ],
-        "correctIndex": 0
+        "correctIndex": 3
     },
     {
         "id": 7,
         "text": "Qual é o nome da proteína rica em cobre que dá o sangue azul ao polvo antártico?",
         "options": [
-            "Hemocianina",
-            "Cytochrome",
+            "Iron",
             "Methionine",
-            "Iron"
+            "Cytochrome",
+            "Hemocianina"
         ],
-        "correctIndex": 0
+        "correctIndex": 3
     },
     {
         "id": 8,
         "text": "Qual espécie é conhecida como 'galinha-da-montanha'?",
         "options": [
-            "Sapo",
-            "Cavalo",
+            "Mosca",
             "Galinha",
-            "Mosca"
+            "Sapo",
+            "Cavalo"
         ],
-        "correctIndex": 0
+        "correctIndex": 2
     },
     {
         "id": 9,
         "text": "Qual é o nome coletivo para abutres?",
         "options": [
-            "Wake",
-            "Ambush",
+            "Gaze",
             "Building",
-            "Gaze"
+            "Wake",
+            "Ambush"
         ],
-        "correctIndex": 0
+        "correctIndex": 2
     },
     {
         "id": 10,
         "text": "A qual subordem científica pertence a família Hyaenidae?",
         "options": [
-            "Feliformia",
             "Ciconiiformes",
-            "Caniformia",
-            "Haplorhini"
+            "Feliformia",
+            "Haplorhini",
+            "Caniformia"
         ],
-        "correctIndex": 0
+        "correctIndex": 1
     }
 ]
