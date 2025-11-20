@@ -7,6 +7,7 @@ import com.badlogic.gdx.graphics.g2d.TextureRegion;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.scenes.scene2d.Stage;
 import com.badlogic.gdx.scenes.scene2d.Touchable;
+import com.badlogic.gdx.scenes.scene2d.actions.Actions;
 import com.badlogic.gdx.utils.Align;
 import com.badlogic.gdx.utils.viewport.Viewport;
 import com.badlogic.gdx.scenes.scene2d.ui.Table;
@@ -114,5 +115,15 @@ public class Question {
         for (int i = 0; i < 4; i++) {
             optionsButtons[i].getButton().setTouchable(Touchable.enabled);
         }
+    }
+
+    public void animateQuest(Runnable onMid) {
+        Table root = getTable();
+
+        root.addAction(Actions.sequence(
+            Actions.fadeOut(0.2f),
+            Actions.run(onMid),
+            Actions.fadeIn(0.2f)
+        ));
     }
 }
