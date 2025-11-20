@@ -5,9 +5,6 @@ import java.util.Random;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Screen;
 import com.badlogic.gdx.graphics.g2d.TextureRegion;
-import com.badlogic.gdx.maps.tiled.TiledMap;
-import com.badlogic.gdx.maps.tiled.TmxMapLoader;
-import com.badlogic.gdx.maps.tiled.renderers.OrthogonalTiledMapRenderer;
 import com.badlogic.gdx.scenes.scene2d.InputEvent;
 import com.badlogic.gdx.scenes.scene2d.Stage;
 import com.badlogic.gdx.scenes.scene2d.ui.Image;
@@ -18,6 +15,7 @@ import com.badlogic.gdx.utils.JsonReader;
 import com.badlogic.gdx.utils.JsonValue;
 import com.seek_knowledge.game.trivia.Question;
 import com.seek_knowledge.game.ui.ButtonGame;
+import com.seek_knowledge.game.ui.Map;
 import com.badlogic.gdx.physics.box2d.World;
 import com.badlogic.gdx.utils.viewport.Viewport;
 import com.seek_knowledge.game.MainGame;
@@ -34,16 +32,13 @@ public class PhaseManager {
     private TextureRegion heartTexture;
     private Character player, enemy;
     private Boolean isBossLevel;
-    private TmxMapLoader mapLoader;
-    private TiledMap map;
-    private OrthogonalTiledMapRenderer mapRenderer;
+    private Map map;
     private World world;
     private float enemyWidth;
     private String characterName;
 
     public PhaseManager(Character player, Character enemy, World world, Float enemyWidth, Viewport viewport,
-            Stage stage, Skin skin, String character, TiledMap map, OrthogonalTiledMapRenderer mapRenderer,
-            TmxMapLoader mapLoader) {
+            Stage stage, Skin skin, String character, Map map) {
         this.player = player;
         this.enemy = enemy;
         this.world = world;
@@ -54,8 +49,6 @@ public class PhaseManager {
         this.skin = skin;
         this.characterName = character;
         this.map = map;
-        this.mapRenderer = mapRenderer;
-        this.mapLoader = mapLoader;
         this.heartTexture = this.skin.getRegion("3hearts");
 
         loadJson("questions/" + characterName + "_questions.json");
@@ -159,7 +152,7 @@ public class PhaseManager {
             private void endBossLevel() {
                 checkGameFinished();
                 currentIndex = 0;
-                changeMap("maps/" + characterName + "_World" + currentPhase + ".tmx");
+                map.changeMap(characterName, currentPhase);
                 isBossLevel = false;
                 loadJson("questions/" + characterName + "_questions.json");
                 enemyImage.setDrawable(null);
@@ -171,7 +164,9 @@ public class PhaseManager {
 
             private void updateQuestion() {
                 Question q = questions[randomNum()];
-                currentQuestion.updateQuestion(q.options, q.correctIndex, q.text);
+                currentQuestion.animateQuest(() -> {
+                    currentQuestion.updateQuestion(q.options, q.correctIndex, q.text);
+                });
             }
 
             private void checkGameFinished() {
@@ -197,13 +192,6 @@ public class PhaseManager {
         for (ButtonGame btn : currentQuestion.getOptionsButtons()) {
             btn.getButton().addListener(listener);
         }
-    }
-
-    public void changeMap(String fileName) {
-        map.dispose();
-        map = mapLoader.load(fileName);
-        mapRenderer.setMap(map);
-        ;
     }
 
     public Question getCurrentQuestion() {
