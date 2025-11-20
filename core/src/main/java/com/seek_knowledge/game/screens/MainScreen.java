@@ -1,15 +1,13 @@
 package com.seek_knowledge.game.screens;
 
-import com.badlogic.gdx.maps.tiled.TmxMapLoader;
 import com.seek_knowledge.game.MainGame;
 import com.badlogic.gdx.graphics.OrthographicCamera;
-import com.badlogic.gdx.maps.tiled.TiledMap;
-import com.badlogic.gdx.maps.tiled.renderers.OrthogonalTiledMapRenderer;
 import com.badlogic.gdx.utils.viewport.StretchViewport;
 import com.badlogic.gdx.physics.box2d.World;
 import com.badlogic.gdx.math.Vector2;
 import com.seek_knowledge.game.sprites.Character;
 import com.seek_knowledge.game.tools.PhaseManager;
+import com.seek_knowledge.game.ui.Map;
 import com.badlogic.gdx.scenes.scene2d.Stage;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.scenes.scene2d.ui.Table;
@@ -19,9 +17,7 @@ import com.badlogic.gdx.scenes.scene2d.ui.Skin;
 import com.badlogic.gdx.scenes.scene2d.ui.Image;
 
 public class MainScreen extends GameScreen {
-    private TmxMapLoader mapLoader;
-    private TiledMap map;
-    private OrthogonalTiledMapRenderer mapRenderer;
+    private Map map;
     private OrthographicCamera camera;
     private Character player, enemy;
     private TextureAtlas atlas;
@@ -35,12 +31,9 @@ public class MainScreen extends GameScreen {
     public MainScreen(MainGame game, String characterName) {
         super(game);
 
-        this.mapLoader = new TmxMapLoader();
-        this.map = mapLoader.load("maps/" + characterName + "_World1.tmx");
-        this.mapRenderer = new OrthogonalTiledMapRenderer(map, 1f);
-
         this.camera = new OrthographicCamera();
         super.viewport = new StretchViewport(WORLD_WIDTH / 2, WORLD_HEIGHT / 2, camera);
+        this.map = new Map(characterName, camera);
 
         this.world = new World(new Vector2(0, -10), true);
         this.player = new Character(world, 3, "characters/" + characterName + ".atlas", 320f, 46f, 0.35f);
@@ -55,7 +48,7 @@ public class MainScreen extends GameScreen {
         this.heartTexture = skin.getRegion("3hearts");
         Image heartImage = new Image(heartTexture);
         heartImage.setScale(1.5f);
-        this.phaseManager = new PhaseManager(player, enemy, world, enemyWidth, viewport, stage, skin, characterName, map, mapRenderer, mapLoader);
+        this.phaseManager = new PhaseManager(player, enemy, world, enemyWidth, viewport, stage, skin, characterName, map);
 
         Table table = phaseManager.getCurrentQuestion().getTable();
         table.add(heartImage).padTop(50);
@@ -72,8 +65,7 @@ public class MainScreen extends GameScreen {
     public void render(float delta) {
 
         super.render(delta);
-        mapRenderer.setView(camera);
-        mapRenderer.render();
+        map.render();
         player.update(delta, 1f, 0.2f);
 
         super.batch.begin();
@@ -89,7 +81,6 @@ public class MainScreen extends GameScreen {
     public void dispose() {
         super.dispose();
         map.dispose();
-        mapRenderer.dispose();
         world.dispose();
         stage.dispose();
         skin.dispose();
