@@ -1,51 +1,117 @@
 [
     {
         "id": 1,
-        "text": "Qual ave nasce com garras nos dígitos das asas?",
+        "text": "Qual espécie de urso-pardo ainda não está extinta?",
         "options": [
-            "Secretary bird",
-            "Hoatzin",
-            "Cassowary",
-            "Cormorant"
+            "Urso-pardo da Síria",
+            "Urso-pardo da Califórnia",
+            "Urso Atlas",
+            "Urso-pardo Mexicano"
         ],
-        "correctIndex": 1
+        "correctIndex": 0
     },
     {
         "id": 2,
-        "text": "Qual é o nome científico do periquito-australiano?",
+        "text": "Qual é o coletivo de abutres em inglês?",
         "options": [
-            "Nymphicus hollandicus",
-            "Melopsittacus undulatus",
-            "Ara macao",
-            "Pyrrhura molinae"
+            "Ambush",
+            "Wake",
+            "Building",
+            "Gaze"
         ],
         "correctIndex": 1
     },
     {
         "id": 3,
-        "text": "Qual dos seguintes é outro nome para a tarântula 'Poecilotheria metallica'?",
+        "text": "Diferente da maioria das salamandras, qual parte do tritão é achatada?",
+        "options": [
+            "Pés",
+            "Cauda",
+            "Cabeça",
+            "Dentes"
+        ],
+        "correctIndex": 1
+    },
+    {
+        "id": 4,
+        "text": "Qual destes é outro nome para a tarântula 'Poecilotheria Metallica'?",
         "options": [
             "Gooty",
+            "Woebegone",
             "Silver Stripe",
-            "Hopper",
-            "Woebegone"
+            "Hopper"
         ],
         "correctIndex": 0
     },
     {
-        "id": 4,
-        "text": "Qual dessas é uma colônia de pólipos e não uma água-viva?",
+        "id": 5,
+        "text": "Quantas espécies vivas de hienas são conhecidas?",
         "options": [
-            "Sea Wasp",
-            "Sea Nettle",
-            "Irukandji",
-            "Homem-de-guerra-português"
+            "4",
+            "8",
+            "2",
+            "6"
         ],
-        "correctIndex": 3
+        "correctIndex": 0
     },
     {
-        "id": 5,
-        "text": "Qual desses animais NÃO é um lagarto?",
+        "id": 6,
+        "text": "Qual ave nasce com garras nos dígitos das asas?",
+        "options": [
+            "Cassowary",
+            "Hoatzin",
+            "Secretary bird",
+            "Cormorant"
+        ],
+        "correctIndex": 1
+    },
+    {
+        "id": 7,
+        "text": "Qual é o nome científico do guepardo?",
+        "options": [
+            "Acinonyx jubatus",
+            "Panthera onca",
+            "Lynx rufus",
+            "Felis catus"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "id": 8,
+        "text": "A que filo biológico pertencem todos os mamíferos, aves e répteis?",
+        "options": [
+            "Chordata",
+            "Echinodermata",
+            "Placazoa",
+            "Annelida"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "id": 9,
+        "text": "Qual espécie é conhecida como 'mountain chicken'?",
+        "options": [
+            "Sapo",
+            "Cavalo",
+            "Mosca",
+            "Galinha"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "id": 10,
+        "text": "A que família científica pertence o aardwolf?",
+        "options": [
+            "Hyaenidae",
+            "Eupleridae",
+            "Felidae",
+            "Canidae"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "id": 11,
+        "text": "Qual destes animais NÃO é um lagarto?",
         "options": [
             "Tuatara",
             "Green Iguana",
@@ -55,58 +121,80 @@
         "correctIndex": 0
     },
     {
-        "id": 6,
-        "text": "Qual é o nome científico do guepardo?",
+        "id": 12,
+        "text": "A família Hyaenidae pertence a qual subordem científica?",
         "options": [
-            "Lynx rufus",
-            "Felis catus",
-            "Panthera onca",
-            "Acinonyx jubatus"
-        ],
-        "correctIndex": 3
-    },
-    {
-        "id": 7,
-        "text": "Qual é o nome da proteína rica em cobre que dá o sangue azul ao polvo antártico?",
-        "options": [
-            "Iron",
-            "Methionine",
-            "Cytochrome",
-            "Hemocianina"
-        ],
-        "correctIndex": 3
-    },
-    {
-        "id": 8,
-        "text": "Qual espécie é conhecida como 'galinha-da-montanha'?",
-        "options": [
-            "Mosca",
-            "Galinha",
-            "Sapo",
-            "Cavalo"
-        ],
-        "correctIndex": 2
-    },
-    {
-        "id": 9,
-        "text": "Qual é o nome coletivo para abutres?",
-        "options": [
-            "Gaze",
-            "Building",
-            "Wake",
-            "Ambush"
-        ],
-        "correctIndex": 2
-    },
-    {
-        "id": 10,
-        "text": "A qual subordem científica pertence a família Hyaenidae?",
-        "options": [
-            "Ciconiiformes",
             "Feliformia",
-            "Haplorhini",
-            "Caniformia"
+            "Caniformia",
+            "Ciconiiformes",
+            "Haplorhini"
         ],
-        "correctIndex": 1
+        "correctIndex": 0
+    },
+    {
+        "id": 13,
+        "text": "Qual é o nome da proteína rica em cobre que dá sangue azul ao polvo antártico?",
+        "options": [
+            "Hemocyanin",
+            "Cytochrome",
+            "Methionine",
+            "Iron"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "id": 14,
+        "text": "Qual é o nome científico do periquito-australiano (Budgerigar)?",
+        "options": [
+            "Melopsittacus undulatus",
+            "Ara macao",
+            "Pyrrhura molinae",
+            "Nymphicus hollandicus"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "id": 15,
+        "text": "Que tipo de criatura é um bonobo?",
+        "options": [
+            "Ape",
+            "Papagaio",
+            "Gato-selvagem",
+            "Leão"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "id": 16,
+        "text": "Qual desses é uma colônia de pólipos e não uma água-viva?",
+        "options": [
+            "Portuguese Man-of-War",
+            "Irukandji",
+            "Sea Nettle",
+            "Sea Wasp"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "id": 17,
+        "text": "Qual é o nome científico do lobo-cinzento?",
+        "options": [
+            "Canis Lupus",
+            "Canis Latrans",
+            "Canis Lupus Lycaon",
+            "Canis Aureus"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "id": 18,
+        "text": "Qual era o nome do lobo-etíope antes de descobrirem que ele era relacionado aos lobos?",
+        "options": [
+            "Simien Jackel",
+            "Canis Simiensis",
+            "Amharic Fox",
+            "Ethiopian Coyote"
+        ],
+        "correctIndex": 0
     }
 ]

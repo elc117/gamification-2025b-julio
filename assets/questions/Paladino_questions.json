@@ -1,277 +1,200 @@
 [
     {
         "id": 1,
-        "text": "Qual das seguintes afirmações não é verdadeira sobre a vida de Tirésias?",
+        "text": "Qual dessas criaturas mitológicas é dita ser metade homem e metade cavalo?",
         "options": [
-            "A deusa Atena o transformou em mulher e, anos depois, novamente em homem",
-            "Hera o cegou depois que ele concordou com Zeus em uma discussão",
-            "Navegou com os Argonautas em busca do velo de ouro",
-            "Revelou a Édipo que ele havia se casado com a própria mãe"
+            "Minotauro",
+            "Górgona",
+            "Centauro",
+            "Pégaso"
         ],
         "correctIndex": 2
     },
     {
         "id": 2,
-        "text": "Em muitas tradições, quem era a esposa de Zeus?",
+        "text": "A marca de roupas e calçados Nike recebeu seu nome da deusa grega do quê?",
         "options": [
-            "Hera",
-            "Afrodite",
-            "Atena",
-            "Héstia"
-        ],
-        "correctIndex": 0
-    },
-    {
-        "id": 3,
-        "text": "Na mitologia nórdica, qual é o nome do símbolo comumente chamado de \"Árvore da Vida\"?",
-        "options": [
-            "Yggdrasil",
-            "As raízes de Odin",
-            "Ymir",
-            "Árvore da Terra"
-        ],
-        "correctIndex": 0
-    },
-    {
-        "id": 4,
-        "text": "Na mitologia africana, Anansi é um trapaceiro e contador de histórias que assume a forma de qual animal?",
-        "options": [
-            "Macaco",
-            "Crocodilo",
-            "Aranha",
-            "Cão selvagem"
+            "Honra",
+            "Coragem",
+            "Vitória",
+            "Força"
         ],
         "correctIndex": 2
     },
     {
-        "id": 5,
-        "text": "Qual destes deuses romanos não tem um equivalente na mitologia grega?",
+        "id": 3,
+        "text": "Qual figura da mitologia grega viajou ao submundo para trazer sua esposa Eurídice de volta ao mundo dos vivos?",
         "options": [
-            "Vulcano",
-            "Marte",
-            "Juno",
-            "Jano"
+            "Dédalo",
+            "Orfeu",
+            "Hércules",
+            "Perseu"
         ],
-        "correctIndex": 3
+        "correctIndex": 1
+    },
+    {
+        "id": 4,
+        "text": "De qual mitologia vem o deus \"Apolo\"?",
+        "options": [
+            "Grega e Romana",
+            "Grega, Romana e Nórdica",
+            "Grega e Chinesa",
+            "Romana e Espanhola"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "id": 5,
+        "text": "O nome desta deusa grega foi escolhido para o planeta-anão responsável pela discórdia na reclassificação de Plutão.",
+        "options": [
+            "Eris",
+            "Dísnomia",
+            "Caronte",
+            "Ceres"
+        ],
+        "correctIndex": 0
     },
     {
         "id": 6,
-        "text": "Na mitologia grega, quem matou Aquiles?",
+        "text": "Quem era o rei dos deuses na mitologia grega antiga?",
         "options": [
-            "Heitor",
-            "Péricles",
-            "Páris",
-            "Helena"
+            "Poseidon",
+            "Hermes",
+            "Zeus",
+            "Apolo"
         ],
         "correctIndex": 2
     },
     {
         "id": 7,
-        "text": "O antigo deus romano da guerra era conhecido como qual dos seguintes?",
+        "text": "Nas tradições mais comuns, quem era a esposa de Zeus?",
         "options": [
-            "Marte",
-            "Júpiter",
-            "Juno",
-            "Ares"
+            "Afrodite",
+            "Hera",
+            "Atena",
+            "Héstia"
         ],
-        "correctIndex": 0
+        "correctIndex": 1
     },
     {
         "id": 8,
-        "text": "Qual é o nome do deus grego das mortes pacíficas?",
+        "text": "Qual das seguintes afirmações NÃO é verdadeira sobre a vida de Tirésias?",
         "options": [
-            "Hades",
-            "Tártaro",
-            "Moros",
-            "Tânato"
+            "Atena o transformou em mulher e depois novamente em homem",
+            "Revelou a Édipo que ele havia se casado com a própria mãe",
+            "Navegou com os Argonautas em busca do velo de ouro",
+            "Hera o cegou após ele concordar com Zeus"
         ],
-        "correctIndex": 3
+        "correctIndex": 2
     },
     {
         "id": 9,
-        "text": "Quais criaturas mitológicas têm rosto de mulher e corpo de abutre?",
+        "text": "Na mitologia grega, quem é o deus do vinho?",
         "options": [
-            "Lâmias",
-            "Ninfas",
-            "Sereias",
-            "Harpias"
+            "Hefesto",
+            "Dionísio",
+            "Apolo",
+            "Deméter"
         ],
-        "correctIndex": 3
+        "correctIndex": 1
     },
     {
         "id": 10,
-        "text": "O deus nórdico Odin tinha dois corvos de estimação chamados \"Huginn\" e \"Muninn\". O que seus nomes significam?",
+        "text": "Quantas cabeças tem Cérbero?",
         "options": [
-            "Poder e Paz",
-            "Pensamento e Memória",
-            "Guerra e Aprendizado",
-            "Sono e Vigília"
+            "5",
+            "3",
+            "1",
+            "2"
         ],
         "correctIndex": 1
     },
     {
         "id": 11,
-        "text": "Qual das seguintes não é uma das Moiras (as Parcas) gregas?",
+        "text": "Quem foi o único deus grego que não teve seu nome alterado na mitologia romana?",
         "options": [
-            "Átropos",
-            "Láquesis",
-            "Cloto",
-            "Narciso"
+            "Atena",
+            "Apolo",
+            "Deméter",
+            "Zeus"
         ],
-        "correctIndex": 3
+        "correctIndex": 1
     },
     {
         "id": 12,
-        "text": "Esta figura mitológica grega é a deusa da estratégia de batalha (entre outras coisas).",
+        "text": "O deus grego Poseidon era o deus do quê?",
         "options": [
-            "Ares",
-            "Atena",
-            "Apolo",
-            "Ártemis"
+            "O Fogo",
+            "A Guerra",
+            "O Mar",
+            "O Sol"
         ],
-        "correctIndex": 1
+        "correctIndex": 2
     },
     {
         "id": 13,
-        "text": "O nome grego de Netuno era...",
+        "text": "O antigo deus romano da guerra era comumente conhecido por qual destes nomes?",
         "options": [
-            "Apolo",
-            "Poseidon",
-            "Zeus",
-            "Ares"
+            "Juno",
+            "Ares",
+            "Júpiter",
+            "Marte"
         ],
-        "correctIndex": 1
+        "correctIndex": 3
     },
     {
         "id": 14,
-        "text": "Qual é o nome do primeiro ser humano na mitologia nórdica?",
+        "text": "Quais criaturas mitológicas possuem rosto de mulher e corpo de abutre?",
         "options": [
-            "Ask",
-            "Asger",
-            "Ake",
-            "Ásmund"
+            "Ninfas",
+            "Harpias",
+            "Lilith",
+            "Sereias"
         ],
-        "correctIndex": 0
+        "correctIndex": 1
     },
     {
         "id": 15,
-        "text": "Quem era o rei dos deuses na mitologia grega antiga?",
+        "text": "Qual deus grego e romano era conhecido como deus da música, verdade e profecia, cura, sol e luz, peste, poesia e mais?",
         "options": [
-            "Poseidon",
-            "Zeus",
-            "Hermes",
-            "Apolo"
+            "Ártemis",
+            "Atena",
+            "Apolo",
+            "Afrodite"
         ],
-        "correctIndex": 1
+        "correctIndex": 2
     },
     {
         "id": 16,
-        "text": "Qual deus grego e romano era conhecido como o deus da música, verdade e profecia, cura, sol e luz, poesia e mais?",
+        "text": "Na mitologia grega, quem liderou os Argonautas na busca pelo velo de ouro?",
         "options": [
-            "Apolo",
-            "Afrodite",
-            "Atena",
-            "Ártemis"
+            "Cástor",
+            "Dédalo",
+            "Jason",
+            "Ulisses"
         ],
-        "correctIndex": 0
+        "correctIndex": 2
     },
     {
         "id": 17,
-        "text": "A marca Nike de roupas e calçados recebeu seu nome da deusa grega de quê?",
+        "text": "Qual das seguintes NÃO é uma das Moiras (as Parcas) da mitologia grega?",
         "options": [
-            "Honra",
-            "Força",
-            "Coragem",
-            "Vitória"
+            "Atropos",
+            "Láquesis",
+            "Narciso",
+            "Cloto"
         ],
-        "correctIndex": 3
+        "correctIndex": 2
     },
     {
         "id": 18,
-        "text": "Na mitologia nórdica, Balder foi morto por Loki com uma lança mágica feita de qual planta?",
-        "options": [
-            "Azevinho",
-            "Visco",
-            "Cicuta",
-            "Acônito"
-        ],
-        "correctIndex": 1
-    },
-    {
-        "id": 19,
-        "text": "Um minotauro é meio humano e meio o quê?",
-        "options": [
-            "Cavalo",
-            "Águia",
-            "Vaca",
-            "Touro"
-        ],
-        "correctIndex": 3
-    },
-    {
-        "id": 20,
-        "text": "Quem é o deus da guerra na mitologia polinésia?",
-        "options": [
-            "Māui",
-            "‘Oro",
-            "Hina",
-            "Kohara"
-        ],
-        "correctIndex": 1
-    },
-    {
-        "id": 21,
-        "text": "Os maoris acreditam que qual nação insular foi fundada por Kupe, que a descobriu sob uma longa nuvem branca?",
-        "options": [
-            "Nova Zelândia",
-            "Fiji",
-            "Vanuatu",
-            "Havaí"
-        ],
-        "correctIndex": 0
-    },
-    {
-        "id": 22,
-        "text": "De acordo com o folclore japonês, qual é o alimento favorito do Kappa?",
-        "options": [
-            "Pepinos",
-            "Abóbora japonesa (kabocha)",
-            "Berinjela (nasu)",
-            "Soba"
-        ],
-        "correctIndex": 0
-    },
-    {
-        "id": 23,
-        "text": "Na mitologia grega, quem liderou os Argonautas em busca do velo de ouro?",
-        "options": [
-            "Dédalo",
-            "Ulisses",
-            "Jasão",
-            "Cástor"
-        ],
-        "correctIndex": 2
-    },
-    {
-        "id": 24,
-        "text": "Qual deus grego lançou uma maçã dourada com as palavras \"para a mais bela\" no meio do banquete dos deuses?",
+        "text": "Qual deus ou deusa grega lançou uma maçã dourada com as palavras \"à mais bela\" no meio do banquete dos deuses?",
         "options": [
             "Ares",
+            "Eris",
             "Hades",
-            "Éris",
             "Ártemis"
         ],
-        "correctIndex": 2
-    },
-    {
-        "id": 25,
-        "text": "Com qual animal a rainha Pasífae dormiu antes de dar à luz o Minotauro, segundo a mitologia grega?",
-        "options": [
-            "Porco",
-            "Cavalo",
-            "Touro",
-            "Boi"
-        ],
-        "correctIndex": 2
+        "correctIndex": 1
     }
 ]

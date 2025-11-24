@@ -1,111 +1,210 @@
 [
     {
         "id": 1,
-        "text": "Qual foi o castigo pela astúcia de Sísifo?",
+        "text": "Qual deus nórdico possui um cavalo chamado Sleipnir?",
         "options": [
-            "Condenado a rolar uma rocha morro acima para sempre.",
-            "Ficar em um lago cheio de água sem poder beber.",
-            "Amarrado a uma pedra para ser bicado por aves por toda a eternidade.",
-            "Derrubar uma árvore que se regenerava após cada golpe de machado."
+            "Balder",
+            "Thor",
+            "Frigg",
+            "Odin"
         ],
-        "correctIndex": 0
+        "correctIndex": 3
     },
     {
         "id": 2,
         "text": "Quem Hipômenes derrotou em uma corrida?",
         "options": [
             "Atalanta",
-            "Teseu",
             "Peleu",
-            "Jasão"
+            "Teseu",
+            "Jason"
         ],
         "correctIndex": 0
     },
     {
         "id": 3,
-        "text": "Talos, o mítico homem de bronze gigante, era o protetor de qual ilha?",
+        "text": "Segundo o folclore algonquino, como alguém se transforma em um Wendigo?",
         "options": [
-            "Creta",
-            "Chipre",
-            "Sardenha",
-            "Sicília"
+            "Participando de canibalismo.",
+            "Praticando mutilação excessiva de carcaças de animais.",
+            "Bebendo o sangue de muitos animais abatidos.",
+            "Realizando um ritual envolvendo assassinato."
         ],
         "correctIndex": 0
     },
     {
         "id": 4,
-        "text": "Na mitologia grega, quem era a filha do rei Minos?",
+        "text": "Qual é a imensa estrutura referida como Yggdrasil na mitologia nórdica?",
         "options": [
-            "Ariadne",
-            "Ariel",
-            "Atena",
-            "Alana"
+            "Castelo",
+            "Árvore",
+            "Montanha",
+            "Templo"
         ],
-        "correctIndex": 0
+        "correctIndex": 1
     },
     {
         "id": 5,
-        "text": "Quem é o deus menor protetor e criador de várias artes, como fabricação de queijo e apicultura?",
+        "text": "Qual das alternativas NÃO é um deus da mitologia nórdica?",
         "options": [
-            "Aristeu",
-            "Cefisso",
-            "Autonoé",
-            "Carme"
+            "Jens",
+            "Loki",
+            "Tyr",
+            "Snotra"
         ],
         "correctIndex": 0
     },
     {
         "id": 6,
-        "text": "De acordo com o folclore algonquino, como alguém se transforma em um Wendigo?",
+        "text": "Na mitologia nórdica, qual é o nome da serpente que rói as raízes da árvore Yggdrasil?",
         "options": [
-            "Participando de canibalismo.",
-            "Executando um ritual envolvendo assassinato.",
-            "Bebendo o sangue de muitos animais mortos.",
-            "Mutilando excessivamente carcaças de animais."
+            "Bragi",
+            "Ymir",
+            "Nidhogg",
+            "Odin"
         ],
-        "correctIndex": 0
+        "correctIndex": 2
     },
     {
         "id": 7,
-        "text": "Quem é o deus egípcio da reprodução e da alface?",
+        "text": "Na mitologia grega, quem era a filha do rei Minos?",
         "options": [
-            "Min",
-            "Mut",
-            "Menu",
-            "Meret"
+            "Ariel",
+            "Ariadne",
+            "Alana",
+            "Atena"
         ],
-        "correctIndex": 0
+        "correctIndex": 1
     },
     {
         "id": 8,
-        "text": "Na mitologia nórdica, qual é o nome da serpente que rói as raízes da árvore Yggdrasil?",
+        "text": "Talos, o mítico gigante de bronze, era o protetor de qual ilha?",
         "options": [
-            "Nidhogg",
-            "Ymir",
-            "Odin",
-            "Bragi"
+            "Chipre",
+            "Creta",
+            "Sardenha",
+            "Sicília"
         ],
-        "correctIndex": 0
+        "correctIndex": 1
     },
     {
         "id": 9,
-        "text": "Que estrutura imensa é referida na mitologia nórdica como Yggdrasil?",
+        "text": "Nidhogg é uma criatura mítica de qual mitologia?",
         "options": [
-            "Árvore",
-            "Castelo",
-            "Montanha",
-            "Templo"
+            "Grega",
+            "Egípcia",
+            "Nórdica",
+            "Hindu"
+        ],
+        "correctIndex": 2
+    },
+    {
+        "id": 10,
+        "text": "Qual foi a punição pela astúcia de Sísifo?",
+        "options": [
+            "Ser amarrado a uma rocha enquanto pássaros o bicavam.",
+            "Empurrar uma pedra morro acima por toda a eternidade.",
+            "Permanecer em um lago cheio de água que ele não podia beber.",
+            "Derrubar uma árvore que se regenerava após cada machadada."
+        ],
+        "correctIndex": 1
+    },
+    {
+        "id": 11,
+        "text": "Quem é o deus menor protetor e criador de várias artes, como fabricação de queijo e apicultura?",
+        "options": [
+            "Aristeu",
+            "Carme",
+            "Autonoe",
+            "Cefisso"
         ],
         "correctIndex": 0
     },
     {
-        "id": 10,
-        "text": "Qual deus nórdico possui um cavalo chamado Sleipnir?",
+        "id": 12,
+        "text": "Qual é o nome do deus grego das mortes pacíficas?",
         "options": [
-            "Odin",
-            "Frigg",
+            "Moros",
+            "Thanatos",
+            "Hades",
+            "Tártaro"
+        ],
+        "correctIndex": 1
+    },
+    {
+        "id": 13,
+        "text": "Hel era filha de qual figura da mitologia nórdica?",
+        "options": [
             "Balder",
+            "Loki",
+            "Odin",
             "Thor"
+        ],
+        "correctIndex": 1
+    },
+    {
+        "id": 14,
+        "text": "Qual é o nome do deus grego dos ferreiros?",
+        "options": [
+            "Hephaestus",
+            "Vulcano",
+            "Dyntos",
+            "Artagatus"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "id": 15,
+        "text": "Na mitologia nórdica, qual é o nome do símbolo conhecido como a 'Árvore da Vida'?",
+        "options": [
+            "Ymir",
+            "Yggdrasil",
+            "Raízes de Odin",
+            "Árvore da Terra"
+        ],
+        "correctIndex": 1
+    },
+    {
+        "id": 16,
+        "text": "Quem era o deus romano do fogo?",
+        "options": [
+            "Vulcano",
+            "Júpiter",
+            "Mercúrio",
+            "Apolo"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "id": 17,
+        "text": "Qual é o nome do primeiro ser humano na mitologia nórdica?",
+        "options": [
+            "Ask",
+            "Ake",
+            "Asger",
+            "Asmund"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "id": 18,
+        "text": "O Hipogrifo, diferente do Grifo, é uma criatura mágica com metade frontal de águia e metade traseira de qual animal?",
+        "options": [
+            "Um Cavalo",
+            "Um Tigre",
+            "Um Dragão",
+            "Um Leão"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "id": 19,
+        "text": "De acordo com o mito egípcio de Osíris, quem assassinou Osíris?",
+        "options": [
+            "Set",
+            "Ra",
+            "Hórus",
+            "Anhur"
         ],
         "correctIndex": 0
     }
