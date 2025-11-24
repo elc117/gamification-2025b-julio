@@ -14,7 +14,7 @@ public class MainMenuScreen extends GameScreen {
         super(game, "assets/assets.atlas", "Background");
         Gdx.input.setInputProcessor(stage);
 
-        this.playButton = new ButtonGame("Jogar", "assets/assets.atlas", "Button_Unpressed", "Button_Pressed", 1.5f);
+        this.playButton = new ButtonGame("Jogar", 1.5f);
 
         Table table = new Table();
         table.setFillParent(true);

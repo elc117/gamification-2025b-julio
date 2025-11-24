@@ -25,7 +25,7 @@ public class SelectScreen extends GameScreen {
         this.characters = new ArrayList<Character>();
         
         for (String name : characterNames) {
-            ButtonGame button = new ButtonGame(name, "assets/assets.atlas", "Button_Unpressed", "Button_Pressed");
+            ButtonGame button = new ButtonGame(name);
             characterButtons.add(button);
         }
 

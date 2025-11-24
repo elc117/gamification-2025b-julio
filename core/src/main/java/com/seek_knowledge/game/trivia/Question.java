@@ -57,8 +57,7 @@ public class Question {
         table.row();
 
         for (int i = 0; i < 4; i++) {
-            optionsButtons[i] = new ButtonGame((i + 1) + ") " + answerOptions[i], "assets/assets.atlas", "Button_Unpressed",
-                    "Button_Pressed", 0.5f);
+            optionsButtons[i] = new ButtonGame((i + 1) + ") " + answerOptions[i], 0.5f);
             table.add(optionsButtons[i].getButton()).width(300).height(50).pad(10);
 
             if (i % 2 == 1) {

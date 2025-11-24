@@ -12,18 +12,18 @@ public class ButtonGame {
     private TextButton button;
     private BitmapFont font;
 
-    public ButtonGame(String text, String atlasPath, String buttonUp, String buttonDown) {
-        this(text, atlasPath, buttonUp, buttonDown, 1f);
+    public ButtonGame(String text) {
+        this(text, 1f);
     }
 
-    public ButtonGame(String text, String atlasPath, String buttonUp, String buttonDown, float fontScale) {
-        this.atlas = new TextureAtlas(atlasPath);
+    public ButtonGame(String text, float fontScale) {
+        this.atlas = new TextureAtlas("assets/assets.atlas");
         this.skin = new Skin();
         skin.addRegions(atlas);
         
         TextButton.TextButtonStyle style = new TextButton.TextButtonStyle();
-        style.up = skin.getDrawable(buttonUp);
-        style.down = skin.getDrawable(buttonDown);
+        style.up = skin.getDrawable("Button_Unpressed");
+        style.down = skin.getDrawable("Button_Pressed");
         font = new BitmapFont(Gdx.files.internal("fonts/hud.fnt"));
         if (fontScale != 1f) {
             font.getData().setScale(fontScale);

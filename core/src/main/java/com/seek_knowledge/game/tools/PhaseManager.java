@@ -1,5 +1,6 @@
 package com.seek_knowledge.game.tools;
 
+import java.util.ArrayList;
 import java.util.Random;
 
 import com.badlogic.gdx.Gdx;
@@ -19,7 +20,7 @@ import com.seek_knowledge.game.ui.Map;
 import com.badlogic.gdx.physics.box2d.World;
 import com.badlogic.gdx.utils.viewport.Viewport;
 import com.seek_knowledge.game.MainGame;
-import com.seek_knowledge.game.screens.MainMenuScreen;
+import com.seek_knowledge.game.screens.FinishScreen;
 import com.seek_knowledge.game.sprites.Character;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 
@@ -36,6 +37,7 @@ public class PhaseManager {
     private World world;
     private float enemyWidth;
     private String characterName;
+    private ArrayList<Integer> enemyQuestions, bossQuestions;
 
     public PhaseManager(Character player, Character enemy, World world, Float enemyWidth, Viewport viewport,
             Stage stage, Skin skin, String character, Map map) {
@@ -50,9 +52,11 @@ public class PhaseManager {
         this.characterName = character;
         this.map = map;
         this.heartTexture = this.skin.getRegion("3hearts");
+        this.enemyQuestions = new ArrayList<>();
+        this.bossQuestions = new ArrayList<>();
 
         loadJson("questions/" + characterName + "_questions.json");
-        int random = randomNum();
+        int random = randomNum(enemyQuestions);
 
         currentQuestion = new Question(questions[random].options, viewport, stage,
                 questions[random].correctIndex, questions[random].text);
@@ -128,7 +132,12 @@ public class PhaseManager {
                     player.takeDamage(1);
                     checkGameOver();
                 }
-                updateQuestion();
+                
+                if (isBossLevel) {
+                    updateQuestion(bossQuestions);
+                } else {
+                    updateQuestion(enemyQuestions);
+                }
             }
 
             private void updateEnemyImage(Image img) {
@@ -162,8 +171,8 @@ public class PhaseManager {
                 player.restoreLife();
             }
 
-            private void updateQuestion() {
-                Question q = questions[randomNum()];
+            private void updateQuestion(ArrayList<Integer> array) {
+                Question q = questions[randomNum(array)];
                 currentQuestion.animateQuest(() -> {
                     currentQuestion.updateQuestion(q.options, q.correctIndex, q.text);
                 });
@@ -173,13 +182,13 @@ public class PhaseManager {
                 if (currentPhase < 3) {
                     currentPhase++;
                 } else {
-                    game.setScreen(new MainMenuScreen(game));
+                    game.setScreen(new FinishScreen("Você Venceu!", game));
                 }
             }
 
             private void checkGameOver() {
                 if (player.getHealth() == 0) {
-                    game.setScreen(new MainMenuScreen(game));
+                    game.setScreen(new FinishScreen("Você Perdeu!", game));
                 } else {
                     enemy.attack();
                     player.hurt();
@@ -217,12 +226,20 @@ public class PhaseManager {
         return currentPhase;
     }
 
-    private int randomNum() {
+    private int randomNum(ArrayList<Integer> array) {
         Random generator = new Random();
-        int num;
+        Integer num;
 
-        num = generator.nextInt((questions.length - 1) - 0 + 1) + 0;
+        do {
+            num = generator.nextInt((questions.length - 1) - 0 + 1) + 0;
+        } while (questionUndone(num, array));
+
+        array.add(num);
 
         return num;
+    }
+
+    private boolean questionUndone(Integer num, ArrayList<Integer> array) {
+        return array.contains(num);
     }
 }
