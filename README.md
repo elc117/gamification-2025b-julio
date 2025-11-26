@@ -57,5 +57,14 @@ Com a lógica de jogo pronta, comecei a buscar os sprites necessários para inim
 
 Depois disso, gerei todas as questões necessárias com chamadas frequentes da API e as adaptei para o padrão já estabelecido dentro dos arquivos ``.json``.
 
+Alterei ainda os backgrounds das telas iniciais, substituindo o placeholder e adicionei os quatro personagens na tela de seleção, para que o usuário pudesse ver com quem iria jogar.
+
 Além disso, para deixar as transições mais suaves, apliquei um fade-in/fade-out nas questões passando um parâmetro ``Runnable``. Também apliquei um leve slide para que a entrada dos personagens não fosse tão abrupta. Ademais, apliquei um leve delay para encaixar a animação de ataque com a animação de levar dano, tanto para o inimigo, quanto para o jogador. Por fim, bloqueei o input enquanto alguma animação estiver sendo executada.
 
+### FinishScreen
+
+Uma vez que os ajustes estavam prontos, decidi criar uma tela sinalizando que o jogo encerrou, levando em consideração se o jogador pôde derrotar todos os chefes, ou perdeu todas as vidas no processo. Foi algo bem simples: criei uma classe ``FinishScreen``, classe filha de ``GameScreen`` e seu construtor recebe como parâmetro "Você Venceu!" ou "Você Perdeu!". Assim, a Label escreve tal mensagem na tela e é criado um ``GameButton`` que retorna ao menu principal.
+
+### HelpScreen
+
+Foi um processo realmente simples, o que me garantiu tempo para criar uma tela de ajuda, que explica o funcionamento geral do jogo. Criei quatro ``Labels`` com o mesmo background que as ``Labels`` da classe ``Question`` possuem. Criei um ``ButtonGame`` que retorna ao menu e adicionei os quatro personagens na parte inferior da tela, porém apenas com fins estéticos. 
