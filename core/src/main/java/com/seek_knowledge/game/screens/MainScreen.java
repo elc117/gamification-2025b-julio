@@ -63,7 +63,6 @@ public class MainScreen extends GameScreen {
 
     @Override
     public void render(float delta) {
-
         super.render(delta);
         map.render();
         player.update(delta, 1f, 0.2f);
