@@ -8,25 +8,35 @@ import com.seek_knowledge.game.MainGame;
 import com.seek_knowledge.game.ui.ButtonGame;
 
 public class MainMenuScreen extends GameScreen {
-    private ButtonGame playButton;
+    private ButtonGame playButton, helpButton;
 
     public MainMenuScreen(MainGame game) {
         super(game, "assets/assets.atlas", "Background");
         Gdx.input.setInputProcessor(stage);
 
         this.playButton = new ButtonGame("Jogar", 1.5f);
+        this.helpButton = new ButtonGame("Ajuda", 1.5f);
 
         Table table = new Table();
         table.setFillParent(true);
         table.center();
-        table.add(playButton.getButton()).size(360, 120).pad(10);
+        table.add(playButton.getButton()).size(360, 120).padTop(100);
         table.row();
+        table.add(helpButton.getButton()).size(360, 120).padTop(20);
         stage.addActor(table);
 
         playButton.getButton().addListener(new ClickListener() {
             @Override
             public void clicked(InputEvent event, float x, float y) {
                 game.setScreen(new SelectScreen(game));
+                dispose();
+            }
+        });
+
+        helpButton.getButton().addListener(new ClickListener() {
+            @Override
+            public void clicked(InputEvent event, float x, float y) {
+                game.setScreen(new HelpScreen(game));
                 dispose();
             }
         });
