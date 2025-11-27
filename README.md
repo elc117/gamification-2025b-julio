@@ -68,3 +68,39 @@ Uma vez que os ajustes estavam prontos, decidi criar uma tela sinalizando que o 
 ### HelpScreen
 
 Foi um processo realmente simples, o que me garantiu tempo para criar uma tela de ajuda, que explica o funcionamento geral do jogo. Criei quatro ``Labels`` com o mesmo background que as ``Labels`` da classe ``Question`` possuem. Criei um ``ButtonGame`` que retorna ao menu e adicionei os quatro personagens na parte inferior da tela, porém apenas com fins estéticos. 
+
+## 4. Diagrama de Classes
+
+<img src = "src/Diagrama.png" alt = "Diagrama de Classes">
+
+## 5. Instrução de execução
+
+Para executar localmente 
+
+- Certifique-se de possuir:
+
+1. Java JDK 8 ou superior;
+2. Gradle;
+
+- Clone o repositório: 
+````
+git clone https://github.com/elc117/gamification-2025b-julio.git
+````
+
+- Windows:
+````
+gradlew.bat lwjgl3:run
+````
+- Linux/MacOS:
+````
+gradlew lwjgl3:run
+````
+
+Para acessar online (recomendado): https://julio-mansan2.itch.io/busque-conhecimento
+
+## 6. Demonstração do Programa
+
+
+
+
+
