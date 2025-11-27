@@ -100,6 +100,7 @@ Para acessar online (recomendado): https://julio-mansan2.itch.io/busque-conhecim
 
 ## 6. Demonstração do Programa
 
+https://github.com/user-attachments/assets/5f93cf22-093d-4a4a-be17-48232c70cd50
 
 ## 7. Referências
 
