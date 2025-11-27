@@ -72,12 +72,6 @@ public class MainMenuScreen extends GameScreen {
     }
 
     @Override
-    public void resize(int width, int height) {
-        // Ajusta viewports adequadamente via GameScreen
-        super.resize(width, height);
-    }
-
-    @Override
     public void dispose() {
         // Libera recursos do botão (fonte, texturas, etc.)
         if (playButton != null)

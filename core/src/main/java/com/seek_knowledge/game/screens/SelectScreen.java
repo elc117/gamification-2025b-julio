@@ -95,12 +95,6 @@ public class SelectScreen extends GameScreen {
     }
 
     @Override
-    public void resize(int width, int height) {
-        super.resize(width, height);
-        stage.getViewport().update(width, height, true); // Ajusta viewport para novos tamanhos
-    }
-
-    @Override
     public void dispose() {
         // Libera memória dos botões
         if (characterButtons != null) {
